@@ -1,0 +1,23 @@
+{
+  "name": "altairbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/H4znow/alTairBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/H4znow/alTairBot/issues"
+  },
+  "homepage": "https://github.com/H4znow/alTairBot#readme",
+  "dependencies": {
+    "discord.js": "^13.3.1"
+  }
+}
