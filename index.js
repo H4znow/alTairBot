@@ -15,14 +15,14 @@ client.once('ready', () => {
         const nombreMembre = client.guilds.cache.get("841455115445600317").memberCount;
         var affichage = 0;
         setInterval(()=>{
-                if(affichage = 0){
+                if(!affichage){
                         client.user.setActivity(`${nombreMembre} membres`, { type: 'WATCHING' });
                         affichage = 1;
                 } else {
                         client.user.setActivity('twitch.tv/hazzuna_', { type: 'WATCHING' });
                         affichage = 0;
                 }
-        },2000)
+        },5000)
 });
 
 //code
