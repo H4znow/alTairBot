@@ -22,7 +22,7 @@ client.once('ready', () => {
                         client.user.setActivity('twitch.tv/hazzuna_', { type: 'WATCHING' });
                         affichage = 0;
                 }
-        },5000)
+        },1800000)
 });
 
 //code
