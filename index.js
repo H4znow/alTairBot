@@ -14,6 +14,7 @@ client.once('ready', () => {
 	console.log(`Ready! Logged in as ${client.user.tag}`);
         const nombreMembre = client.guilds.cache.get("841455115445600317").memberCount;
         var affichage = 0;
+        client.user.setActivity('twitch.tv/hazzuna_', { type: 'WATCHING' });
         setInterval(()=>{
                 if(!affichage){
                         client.user.setActivity(`${nombreMembre} membres`, { type: 'WATCHING' });
@@ -31,7 +32,9 @@ client.on("messageCreate", require("./fun/ping").fun);
 client.on("messageCreate", require("./fun/pote").pote);
 client.on("messageDelete", require("./log/messageSupp").log);
 client.on("messageUpdate", require("./log/messageModif").log2);
+client.on("messageCreate", require("./fun/react").react);
 
+//client.on("messageCreate", require("./test").test);
 
 // Login to Discord with your client's token
 client.login(token);

@@ -1,11 +1,10 @@
 const index = require("../index");
-<<<<<<< HEAD
-=======
 
-exports.react = ()=> {
-    const args = message.content.split(' ').toLowerCase();
-    if(args == "ah"){
-        console.log("Ah !");
+exports.react = message => {
+    var message2 = message.toString().toLowerCase();
+    if(message2.match(/^a{1,}h{1,}[!{1,0}]?/)){
+        message.react("🇦");
+        message.react("🇧");
+        message.react("🇨");
     }
 }
->>>>>>> funcommand
