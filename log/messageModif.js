@@ -3,8 +3,7 @@ const { MessageEmbed } = require('discord.js');
 const client = index.c;
 
 exports.log2 = (oldMessage, newMessage) => {
-    const guild = client.guilds.cache.get('841455115445600317');
-    if (!guild || oldMessage.guild.id == "888134895682072619") return console.log("Je ne suis plus dans ce server ou bien ce message provient de votre server personnel.");
+    if (oldMessage.guild.id != index.poopyGangId) return;
     const channel = client.channels.cache.get("870229804622966835");
     //oldmessage
     var mess = oldMessage.content;
@@ -49,6 +48,6 @@ exports.log2 = (oldMessage, newMessage) => {
         .addField(`*Ancien Message* : `, `${mess}`)
         .addField(`*Nouveau Message* : `, `${nMess}`)
         .addField(`*Salon* : `,`<#${oldMessage.channel.id}>` )
-        .setFooter(`Vous etes beaux • Message envoyé le : ${datetime}`, 'https://i.postimg.cc/nhZbcy3d/aigle.png');
+        .setFooter(`Vous êtes beaux • Message envoyé le : ${datetime}`, 'https://i.postimg.cc/nhZbcy3d/aigle.png');
     channel.send({ embeds: [messModif] });
 };
