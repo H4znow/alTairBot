@@ -33,7 +33,7 @@ client.on("messageCreate", require("./fun/pote").pote);
 client.on("messageDelete", require("./log/messageSupp").log);
 client.on("messageUpdate", require("./log/messageModif").log2);
 client.on("messageCreate", require("./fun/react").react);
-
+client.on("messageCreate", require("./orga/suggestion").suggestion);
 //test
 client.on("messageCreate", require("./test").test);
 
