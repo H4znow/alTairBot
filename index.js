@@ -35,7 +35,7 @@ client.on("messageUpdate", require("./log/messageModif").log2);
 client.on("messageCreate", require("./fun/react").react);
 
 //test
-client.on("messageCreate", require("./test").test);
+//client.on("messageCreate", require("./test").test);
 
 // Login to Discord with your client's token
 client.login(token);
