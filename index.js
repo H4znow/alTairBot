@@ -5,9 +5,10 @@ const { token } = require('./config.json');
 // Create a new client instance
 const client = new Client({ intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_MEMBERS", "GUILD_MESSAGE_REACTIONS"] });
 
-
+exports.poopyGangId = poopyGangId;
 exports.c = client;
 exports.p = "..";
+
 // When the client is ready, run this code (only once)
 
 client.once('ready', () => {
