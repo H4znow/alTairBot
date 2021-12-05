@@ -7,7 +7,7 @@ const client = new Client({ intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_MEMBERS
 
 
 exports.c = client;
-exports.p = ".";
+exports.p = "..";
 // When the client is ready, run this code (only once)
 
 client.once('ready', () => {
@@ -35,7 +35,7 @@ client.on("messageUpdate", require("./log/messageModif").log2);
 client.on("messageCreate", require("./fun/react").react);
 
 //test
-//client.on("messageCreate", require("./test").test);
+client.on("messageCreate", require("./test").test);
 
 // Login to Discord with your client's token
 client.login(token);
