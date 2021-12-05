@@ -11,10 +11,12 @@ exports.log2 = (oldMessage, newMessage) => {
         //Si le message contient un 'attachements' (image) alors recuperer leur liens
         //Id bot 
         if(oldMessage.author.id == "867034511196160060") return;
-        oldMessage.attachments.forEach(attachment => {
-        const ImageLink = attachment.proxyURL;
-        mess =" " + mess + ImageLink + " ";
-    });
+            oldMessage.attachments.forEach(attachment => {
+            const ImageLink = attachment.proxyURL;
+            mess =" " + mess + ImageLink + " ";
+        });
+    } else if(oldMessage.embeds[0]){
+        mess = "Un embed.";
     } else {
         mess = oldMessage.content;
     }
@@ -24,10 +26,12 @@ exports.log2 = (oldMessage, newMessage) => {
         //Si le message contient un 'attachements' (image) alors recuperer leur liens
         //Id bot 
         if(newMessage.author.id == "867034511196160060") return;
-        newMessage.attachments.forEach(attachment => {
-        const ImageLink = attachment.proxyURL;
-        nMess = " " + nMess + ImageLink + " ";
-    });
+            newMessage.attachments.forEach(attachment => {
+            const ImageLink = attachment.proxyURL;
+            nMess = " " + nMess + ImageLink + " ";
+        });
+    } else if (newMessage.embeds[0]){
+        nMess = "Un embed."
     }
 
     //Date

@@ -8,8 +8,8 @@ exports.log = message => {
     const channel = client.channels.cache.get("870229804622966835");
 
     var mess = message.content;
-    if(message.stickers.size == 1){
-        mess = "Un sticker a été supprimé.";
+    if(message.stickers.size == 1 || message.embeds[0]){
+        mess = "Un sticker/un embed a été supprimé.";
     }else if ( message.attachments.size){
         //Si le message contient un 'attachements' (image) alors recuperer leur liens
         //Id bot 
