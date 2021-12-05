@@ -1,24 +1,15 @@
 // Require the necessary discord.js classes
 const { Client, Intents } = require('discord.js');
-const { token , poopyGangId } = require('./config.json');
+const { token } = require('./config.json');
 
 // Create a new client instance
 const client = new Client({ intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_MEMBERS", "GUILD_MESSAGE_REACTIONS"] });
 
-exports.poopyGangId = poopyGangId;
-exports.c = client;
-exports.p = ".";
 
-//date
-var currentdate = new Date(); 
-var datetime = currentdate.getDate() + "/"
-    + (currentdate.getMonth()+1)  + "/" 
-    + currentdate.getFullYear() + " @ "  
-    + currentdate.getHours() + ":"  
-    + currentdate.getMinutes() + ":" 
-    + currentdate.getSeconds();
-exports.date= datetime;
+exports.c = client;
+exports.p = "..";
 // When the client is ready, run this code (only once)
+
 client.once('ready', () => {
 	console.log(`Ready! Logged in as ${client.user.tag}`);
         const nombreMembre = client.guilds.cache.get("841455115445600317").memberCount;
@@ -42,9 +33,9 @@ client.on("messageCreate", require("./fun/pote").pote);
 client.on("messageDelete", require("./log/messageSupp").log);
 client.on("messageUpdate", require("./log/messageModif").log2);
 client.on("messageCreate", require("./fun/react").react);
-client.on("messageCreate", require("./orga/suggestion").suggestion);
+
 //test
-//client.on("messageCreate", require("./test").test);
+client.on("messageCreate", require("./test").test);
 
 // Login to Discord with your client's token
 client.login(token);
