@@ -3,6 +3,7 @@ const { MessageEmbed } = require('discord.js');
 const client = index.c;
 
 exports.log = message => {
+    if(message.channel.name == undefined) return;
     if (message.guild.id != index.poopyGangId) return;
     //Si le message vient d'un bot, return
     if(message.author.bot)return;

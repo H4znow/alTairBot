@@ -3,7 +3,7 @@ const { MessageEmbed } = require('discord.js');
 const client = index.c;
 
 exports.log2 = (oldMessage, newMessage) => {
-
+    if(oldMessage.channel.name == undefined) return;
     if (oldMessage.guild.id != index.poopyGangId) return;
     //Si le message vient d'un bot, return
     if(oldMessage.author.bot) return;
@@ -30,7 +30,7 @@ exports.log2 = (oldMessage, newMessage) => {
             nMess = " " + nMess + ImageLink + " ";
         });
     }
-    
+
     const messModif = new MessageEmbed()
         .setColor('#fab534')
         .setTitle("Message modifié")

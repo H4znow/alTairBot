@@ -3,7 +3,8 @@ const { Client, Intents } = require('discord.js');
 const { token, poopyGangId } = require('./config.json');
 
 // Create a new client instance
-const client = new Client({ intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_MEMBERS", "GUILD_MESSAGE_REACTIONS"] });
+const client = new Client({ intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_MEMBERS", "GUILD_MESSAGE_REACTIONS", 
+"DIRECT_MESSAGES", "DIRECT_MESSAGE_REACTIONS"], partials: ['MESSAGE', 'CHANNEL'], });
 
 exports.poopyGangId = poopyGangId;
 exports.c = client;
@@ -24,7 +25,7 @@ client.once('ready', () => {
                         client.user.setActivity('twitch.tv/hazzuna_', { type: 'WATCHING' });
                         affichage = 0;
                 }
-        },1800000)
+        },600000)
 });
 
 //code
@@ -35,8 +36,11 @@ client.on("messageDelete", require("./log/messageSupp").log);
 client.on("messageUpdate", require("./log/messageModif").log2);
 client.on("messageCreate", require("./fun/react").react);
 client.on("messageCreate", require("./orga/suggestion").suggestion);
+client.on("messageCreate", require("./orga/chuchotement").chuchotement);
+
+
 //test
-client.on("messageCreate", require("./test").test);
+//client.on("messageCreate", require("./test").test);
 
 // Login to Discord with your client's token
 client.login(token);

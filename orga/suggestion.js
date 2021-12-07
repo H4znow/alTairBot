@@ -8,11 +8,15 @@ exports.suggestion = message => {
     //message dans le bon channel ou pas ?
     if(message.channel.id != channelSug) return;
     //Si le message est envoye par autre que le bot et un admin et un mod, il faut le supp
-    if((message.author.id != "867034511196160060") && (!message.member.roles.cache.some(role => role.id === '841457555199754280')) &&
-    (!message.member.roles.cache.some(role => role.id === '878020576579555328')) && message.author.id != "517337001330999296"){
-        message.delete()
-        .then(msg => {})
-        .catch(console.error); 
+    const message_send_byBot_Mod_Admin_OrHaznow = (message.author.bot) || (message.member.roles.cache.some(role => role.id === '841457555199754280')) ||
+    (message.member.roles.cache.some(role => role.id === '878020576579555328')) || (message.author.id != "517337001330999296");
+
+    if(!message_send_byBot_Mod_Admin_OrHaznow){
+        message.delete();
+    }else{
+        if(message.content.startsWith(index.p+"su")){
+            message.delete();
+        }
     }
 
     const args = message.content.split(' ');
@@ -21,7 +25,7 @@ exports.suggestion = message => {
     if(args.length < 1 || cmd != index.p + "su" ) return;
     const messSu = new MessageEmbed()
         .setColor('#fab534')
-        .setAuthor(`${message.author.tag}`, `${message.author.avatarURL()}`)
+        .setAuthor(`${message.author.tag}`, `${message.author.avatarURL({dynamic : true})}`)
         .addField(`__Suggestion__ :`,`${args.join(' ')}` )
         .setFooter(`Vous êtes beaux • Message envoyé le : ${index.date}`, 'https://i.postimg.cc/nhZbcy3d/aigle.png');
     channel.send({ embeds: [messSu] }).then(embedMessage => {
