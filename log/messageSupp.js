@@ -3,8 +3,10 @@ const { MessageEmbed } = require('discord.js');
 const client = index.c;
 
 exports.log = message => {
-    if(message.channel.name == undefined) return;
+    if(message.channel.type == "DM") return;
     if (message.guild.id != index.poopyGangId) return;
+    //channel admin
+    if(message.channel.id == "865202442971250699")return;
     //Si le message vient d'un bot, return
     if(message.author.bot)return;
     const channel = client.channels.cache.get("870229804622966835");

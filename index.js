@@ -37,8 +37,7 @@ client.on("messageUpdate", require("./log/messageModif").log2);
 client.on("messageCreate", require("./fun/react").react);
 client.on("messageCreate", require("./orga/suggestion").suggestion);
 client.on("messageCreate", require("./orga/chuchotement").chuchotement);
-
-
+client.on("messageCreate", require("./fun/discuDm").dmDiscu);
 //test
 //client.on("messageCreate", require("./test").test);
 

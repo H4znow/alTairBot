@@ -3,7 +3,9 @@ const { MessageEmbed } = require('discord.js');
 const client = index.c;
 
 exports.log2 = (oldMessage, newMessage) => {
-    if(oldMessage.channel.name == undefined) return;
+    if(oldMessage.channel.type == "DM") return;
+    //channel admin
+    if(message.channel.id == "865202442971250699")return;
     if (oldMessage.guild.id != index.poopyGangId) return;
     //Si le message vient d'un bot, return
     if(oldMessage.author.bot) return;
@@ -40,6 +42,7 @@ exports.log2 = (oldMessage, newMessage) => {
         .addField(`*Ancien Message* : `, `${mess}`)
         .addField(`*Nouveau Message* : `, `${nMess}`)
         .addField(`*Salon* : `,`<#${oldMessage.channel.id}>` )
-        .setFooter(`Vous êtes beaux • Message envoyé le : ${index.date}`, 'https://i.postimg.cc/nhZbcy3d/aigle.png');
+        .setTimestamp()
+        .setFooter(`Vous êtes beaux`, 'https://i.postimg.cc/nhZbcy3d/aigle.png');
     channel.send({ embeds: [messModif] });
 };
