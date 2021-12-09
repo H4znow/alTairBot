@@ -23,8 +23,7 @@ exports.pote = message => {
 	}
 	else if (cmd == index.p + 'choco') {
 		message.channel.send('Je suis sous le choc <:wtf:868461188575543296> ');
-	}
-	else if (cmd == index.p + 'say') {
+	}else if (cmd == index.p + 'say') {
 		if ((message.member.roles.cache.has('841457555199754280')||(message.author.id == "517337001330999296"))) {
 			const say = args.join(' ');
 			message.delete();
@@ -34,5 +33,7 @@ exports.pote = message => {
 			message.delete();
 			message.reply('Tu n\'es pas mon maitre.');
 		}
+	} else if(cmd == index.p + 'kyky'){
+		message.channel.send("Il est mute plus vite que son ombre... Mais on l'aime quand même !");
 	}
 };
