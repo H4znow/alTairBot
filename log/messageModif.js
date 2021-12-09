@@ -5,7 +5,7 @@ const client = index.c;
 exports.log2 = (oldMessage, newMessage) => {
     if(oldMessage.channel.type == "DM") return;
     //channel admin
-    if(message.channel.id == "865202442971250699")return;
+    if(oldMessage.channel.id == "865202442971250699")return;
     if (oldMessage.guild.id != index.poopyGangId) return;
     //Si le message vient d'un bot, return
     if(oldMessage.author.bot) return;

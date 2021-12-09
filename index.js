@@ -14,11 +14,12 @@ exports.p = "..";
 
 client.once('ready', () => {
 	console.log(`Ready! Logged in as ${client.user.tag}`);
-        const nombreMembre = client.guilds.cache.get("841455115445600317").memberCount;
+        var nombreMembre = client.guilds.cache.get("841455115445600317").memberCount;
         var affichage = 0;
         client.user.setActivity('twitch.tv/hazzuna_', { type: 'WATCHING' });
         setInterval(()=>{
                 if(!affichage){
+                        nombreMembre = client.guilds.cache.get("841455115445600317").memberCount;
                         client.user.setActivity(`${nombreMembre} membres`, { type: 'WATCHING' });
                         affichage = 1;
                 } else {
