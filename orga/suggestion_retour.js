@@ -17,7 +17,7 @@ exports.suggestion_retour = message =>{
     if(!message_send_byBot_Mod_Admin_OrHaznow) return;
     if(cmd != index.p + "retour")return;
     if(args.length != 3){
-        message.reply(`Votre message doit être de la forme suivante : \`..retour\` + \`ID du message\` + \`oui/non\` `).then(msg =>{
+        message.reply(`<:no:916448935948746772> Votre message doit être de la forme suivante : \`..retour\` + \`ID du message\` + \`oui/non\` `).then(msg =>{
             setTimeout(()=>{
                 message.delete().then(()=>{
                     msg.delete();
@@ -29,7 +29,7 @@ exports.suggestion_retour = message =>{
     const messageID = args[1];
     const answer = args[2];
     if(!messageID.match(/^[0-9]{18}/)){
-        message.reply(`l'ID du message donné est incorrecter. Merci de réessayer avec un ID correcte.`).then(msg =>{
+        message.reply(`<:no:916448935948746772> l'ID du message donné est incorrecter. Merci de réessayer avec un ID correcte.`).then(msg =>{
             setTimeout(()=>{
                 message.delete().then(()=>{
                     msg.delete();
@@ -40,7 +40,7 @@ exports.suggestion_retour = message =>{
     }
     const answer_is_yes_or_no = (answer.match(/^oui$/)||answer.match(/^non$/));
     if(!answer_is_yes_or_no){
-        message.reply(`Vous devez (in)valider la suggestion avec \`oui\` ou \`non\``).then(msg =>{
+        message.reply(`<:no:916448935948746772> Vous devez (in)valider la suggestion avec \`oui\` ou \`non\``).then(msg =>{
             setTimeout(()=>{
                 message.delete().then(()=>{
                     msg.delete();

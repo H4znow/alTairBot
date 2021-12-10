@@ -31,7 +31,7 @@ exports.log = message => {
         .addField(`*Auteur* :`, `<@${message.author.id}> -- ${message.author.tag}`)
         .addField(`*Message* : `, `${mess}`)
         .addField(`*Salon* : `,`<#${message.channel.id}>` )
-        .setFooter(`Vous êtes beaux • Message envoyé le : ${index.date} `, 'https://i.postimg.cc/nhZbcy3d/aigle.png');
+        .setFooter(`Vous êtes beaux`, 'https://i.postimg.cc/nhZbcy3d/aigle.png');
         
     channel.send({ embeds: [messSupp] });
 };

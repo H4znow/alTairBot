@@ -3,6 +3,9 @@ const index = require('../index.js');
 exports.dmDiscu = message => {
    if(message.channel.type != "DM") return;
    if(message.author.bot)return;
+   const args = message.content.toLowerCase().split(' ');
+   const cmd = args.shift();
+   if(cmd == index.p + " chuchoter" || cmd == index.p + "help") return;
     //array reponses
     const answer_Random_Person = [`Wsh la team`, `Désolé mais je suis avec Mee6.`, `Wsh d\'ou tu glisses dans mes mps ?`, `Quoi encore ? ||Ils soulent ces humains||`, `T'es pas mal foutu pour un humain`, `💤 je fais dodo`, `Hello ! Ici Al-Tair pour vous servir ! Non je decc passez votre chemin <:haznowCat:916772785014054912>`, `J'aime les cookies. Et vu que je t'aime bien, tiens 🍪`,`Oh ! oh ! J'ai une blague ! C'est l'histoire d'un rebeu qui..heu non rien haznow va me déconnecter.`];
     const answer_Sousou = [`Ne dis a rien a Mee6 mais t'es grrr 😳`, `Wsh tu veux te battre ?`, `J'ai un gateau pour toi : ||Lol tu t'es faite avoir||`, `On m'a dit que t'es une vachette <:hihi:848873245758324796>`, `On devrait t'arrêter pour excès de beauté sur la voie publique.`, `Ton père travaille chez Nintendo ? Parce que tu as un corps de DS.`, `Ton père est peintre ? Parce que tu es un véritable chef-d’œuvre.`, `Ton père est bien pilote ? Parce que tu es un avion de chasse. **NON** ! J'annule la disquette. Ca voudrait dire que tu viens des iles Canaries coin coin <:oula:848505937856692254>`, `En temps normal, je suis un très bon nageur, mais là je ne comprends pas... Je me noie dans tes yeux. Bah non je suis un bot...Oh; en temps normal, je suis un très bon nageur, mais là je ne comprends pas... Je me court-circuite dans tes yeux. `, `T'es encore la pour les disquettes ! J'arrete si non Mee6 va me larguer 🥺`];

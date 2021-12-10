@@ -40,6 +40,7 @@ client.on("messageCreate", require("./orga/suggestion").suggestion);
 client.on("messageCreate", require("./orga/suggestion_retour").suggestion_retour);
 client.on("messageCreate", require("./orga/chuchotement").chuchotement);
 client.on("messageCreate", require("./fun/discuDm").dmDiscu);
+client.on("messageCreate", require("./orga/help").help);
 
 //test
 //client.on("messageCreate", require("./test").test);

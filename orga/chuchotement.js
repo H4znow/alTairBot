@@ -26,7 +26,7 @@ exports.chuchotement = message => {
     const message_contain_oneAttachement_WITH_text =  message.attachments.size == 1 && message.content.length > 1;
     const message_contain_sticker = message.stickers.size > 0;
     var embed_with_image = false;
-    const messageError = `Ouch ! __Attention__, le message ne doit contenir que du texte et facultativement __une unique__ image pour illustrer tes propos (donc ni gifs, ni stickers, ni deux images , etc). <:Love:856559537368596530>`;
+    const messageError = `<:no:916448935948746772> Ouch ! __Attention__, le message ne doit contenir que du texte et facultativement __une unique__ image pour illustrer tes propos (donc ni gifs, ni stickers, ni deux images , etc). <:Love:856559537368596530>`;
     if(message_contain_sticker){
         message.reply(messageError);
         return;

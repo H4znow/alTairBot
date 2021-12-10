@@ -14,12 +14,12 @@ exports.suggestion = message => {
     if(!message_send_byBot_Mod_Admin_OrHaznow){
         message.delete();
     }else{
-        if(message.content.startsWith(index.p+"su")){
+        if(message.content.toLowerCase().startsWith(index.p+"su")){
             message.delete();
         }
     }
 
-    const args = message.content.split(' ');
+    const args = message.content.toLowerCase().split(' ');
     const cmd = args.shift();
     //Si le message n'a pas d'argument ou la mauvaise commande, le programme stopp
     if(args.length < 1 || cmd != index.p + "su" ) return;
