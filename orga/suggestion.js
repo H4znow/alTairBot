@@ -27,7 +27,8 @@ exports.suggestion = message => {
         .setColor('#fab534')
         .setAuthor(`${message.author.tag}`, `${message.author.avatarURL({dynamic : true})}`)
         .addField(`__Suggestion__ :`,`${args.join(' ')}` )
-        .setFooter(`Vous êtes beaux • Message envoyé le : ${index.date}`, 'https://i.postimg.cc/nhZbcy3d/aigle.png');
+        .setTimestamp()
+        .setFooter(`Vous êtes beaux`, 'https://i.postimg.cc/nhZbcy3d/aigle.png');
     channel.send({ embeds: [messSu] }).then(embedMessage => {
         embedMessage.react("916449164517335101");
         embedMessage.react("916448935948746772");
