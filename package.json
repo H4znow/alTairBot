@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/H4znow/alTairBot#readme",
   "dependencies": {
-    "discord.js": "^13.3.1"
+    "discord.js": "^13.3.1",
+    "mysql": "^2.18.1"
   }
 }
