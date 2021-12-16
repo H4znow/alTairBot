@@ -46,8 +46,8 @@ client.on("messageCreate", require("./orga/help").help);
 //client.on("messageCreate", require("./test").test);
 
 // Login to Discord with your client's token
-client.login(token);
-
+//client.login(token);
+client.login(process.env.BOT_TOKEN);
 
 var currentdate = new Date(); 
 var datetime = currentdate.getDate() + "/"
