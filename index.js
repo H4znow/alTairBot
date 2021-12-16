@@ -1,6 +1,9 @@
 // Require the necessary discord.js classes
 const { Client, Intents } = require('discord.js');
 const { token} = require('./config.json');
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 // Create a new client instance
 const client = new Client({ intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_MEMBERS", "GUILD_MESSAGE_REACTIONS", 
