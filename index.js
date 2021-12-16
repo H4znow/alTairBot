@@ -1,11 +1,11 @@
 // Require the necessary discord.js classes
 const { Client, Intents } = require('discord.js');
-const { token, poopyGangId } = require('./config.json');
+const { token} = require('./config.json');
 
 // Create a new client instance
 const client = new Client({ intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_MEMBERS", "GUILD_MESSAGE_REACTIONS", 
 "DIRECT_MESSAGES", "DIRECT_MESSAGE_REACTIONS"], partials: ['MESSAGE', 'CHANNEL'], });
-
+const poopyGangId = "841455115445600317"
 exports.poopyGangId = poopyGangId;
 exports.c = client;
 exports.p = "..";
@@ -46,8 +46,8 @@ client.on("messageCreate", require("./orga/help").help);
 //client.on("messageCreate", require("./test").test);
 
 // Login to Discord with your client's token
-//client.login(token);
-client.login(process.env.BOT_TOKEN);
+client.login(token);
+
 
 var currentdate = new Date(); 
 var datetime = currentdate.getDate() + "/"
