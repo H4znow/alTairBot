@@ -4,7 +4,7 @@ exports.pote = message => {
 	const args = message.content.toLowerCase().split(' ');
 	const cmd = args.shift();
 	if (cmd == index.p + 'sarah') {
-		message.channel.send('La best !');
+		message.channel.send('La plus belle !');
 	}
 	else if (cmd == index.p + 'alex') {
 		message.channel.send('Mon meilleur pote !');
@@ -35,5 +35,7 @@ exports.pote = message => {
 		}
 	} else if(cmd == index.p + 'kyky'){
 		message.channel.send("Il est mute plus vite que son ombre... Mais on l'aime quand même !");
+	} else if(cmd == index.p + 'haznow'){
+		message.author.send("Pouet !").catch(console.log(err));
 	}
 };
