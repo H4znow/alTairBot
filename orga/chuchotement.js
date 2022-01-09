@@ -50,16 +50,14 @@ exports.chuchotement = message => {
     if(embed_with_image){
         chuchotement = new MessageEmbed()
             .setColor('#F91AFC')
-            .setTitle("Chuchotement d'un anonyme...")
-            .addField('\u200b', `${mess}`)
+            .addField('Chuchotement d\'un anonyme...', `${mess}`)
             .setImage(`${ImageLink}`)
             .setTimestamp()
             .setFooter(`Vous êtes beaux`, 'https://i.postimg.cc/nhZbcy3d/aigle.png');
     }else{
         chuchotement = new MessageEmbed()
         .setColor('#F91AFC')
-        .setTitle("Chuchotement d'un anonyme...")
-        .addField('\u200b', `${mess}`)
+        .addField('Chuchotement d\'un anonyme...', `${mess}`)
         .setTimestamp()
         .setFooter(`Vous êtes beaux`, 'https://i.postimg.cc/nhZbcy3d/aigle.png');
     }
@@ -69,6 +67,6 @@ exports.chuchotement = message => {
         const url = embedMessage.url;
         channelid.send(`le message anonyme du \`${index.date}\` a été envoyé par ||\`${message.author.id}\`|| \n lien message : ${url}`);
         message.reply(`Ton message a été envoyé avec succès dans <#917454560514146304> <:Love:856559537368596530> <:Hype:856559664610541579>`)
-    });
+    }).catch(err => {console.log(err)});
     
 }
