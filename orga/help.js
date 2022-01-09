@@ -28,5 +28,8 @@ exports.help = message => {
         .addField(`Retour: `, `Cette commande ne fonctionne __que__ dans <#878527923844427787> et n'est utiliable __que__ par un modérateur ou un admin. Elle permet de donner un feedback sur les propositions. Envoies \`${index.p}retour\` pour plus d'info.`, true)
         .setTimestamp()
         .setFooter(`Vous êtes beaux`, 'https://i.postimg.cc/nhZbcy3d/aigle.png');
-    message.author.send({ embeds: [helpMess] }).catch(()=>{ message.reply(`<:no:916448935948746772> Je ne peux pas t'envoyer de Dm.`) })
+    message.author.send({ embeds: [helpMess] }).then(mess =>{ message.delete() })
+    .catch(err =>{ 
+    message.reply(`<:no:916448935948746772> Je ne peux pas t'envoyer de Dm.`,
+    console.log(err)); })
 }
