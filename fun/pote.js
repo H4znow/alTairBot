@@ -1,6 +1,7 @@
 const index = require('../index.js');
 
 exports.pote = message => {
+	const answer = message.content.split(' ').shift().join(' ');
 	const args = message.content.toLowerCase().split(' ');
 	const cmd = args.shift();
 	if (cmd == index.p + 'sarah') {
@@ -27,7 +28,7 @@ exports.pote = message => {
 		if ((message.member.roles.cache.has('841457555199754280')||(message.author.id == "517337001330999296"))) {
 			const say = args.join(' ');
 			message.delete();
-			message.channel.send(say);
+			message.channel.send(answer);
 		}
 		else {
 			message.delete();
