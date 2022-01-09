@@ -1,9 +1,9 @@
 const index = require('../index.js');
 
 exports.pote = message => {
-	const answer = message.content.split(' ').shift().join(' ');
-	const args = message.content.toLowerCase().split(' ');
-	const cmd = args.shift();
+	const args = message.content.split(' ');
+	const cmd = args.shift().toLowerCase();
+	const answer = args.join(' ');
 	if (cmd == index.p + 'sarah') {
 		message.channel.send('La plus belle !');
 	}
