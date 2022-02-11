@@ -37,6 +37,6 @@ exports.pote = message => {
 	} else if(cmd == index.p + 'kyky'){
 		message.channel.send("Il est mute plus vite que son ombre... Mais on l'aime quand même !");
 	} else if(cmd == index.p + 'haznow'){
-		message.author.send("Pouet !").catch(console.log(err));
+		message.author.send("Pouet !").catch(err => {console.log(err)});
 	}
 };
