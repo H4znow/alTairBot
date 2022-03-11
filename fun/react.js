@@ -7,15 +7,12 @@ exports.react = message => {
         message.react("🇦");
         message.react("🇧");
         message.react("🇨");
-    } else if(message2.match(/ *\bsarah\b/)){
-        message.react("917096111834026055");
+    } else if(message2.match(/\bquoi\?{0,}\b$/)){
+        message.react("🇫");
+        message.react("🇪");
+        message.react("🇺");
+        message.react("🇷");
     } else if(message2.match(/ *\bbot\b/)){
         message.react("👀");
-    } else if(message2.match(/^je t\'? ?aime al\-? ?tair/)){
-        if(message.author.id != "517337001330999296"){
-            message.reply("Merci 😳")
-            return;
-        }
-        message.reply("Moi aussi ❤️");
-    }
+    } 
 }
