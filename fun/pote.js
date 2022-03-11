@@ -40,7 +40,7 @@ exports.pote = message => {
 		message.author.send("Pouet !").catch(err => {console.log(err)});
 	}else if (cmd == index.p + 'sun') {
 		message.channel.send('Chemsouna ! <:hihi:848873245758324796>');
-	}else if (cmd == index.p + 'Raven') {
+	}else if (cmd == index.p + 'raven') {
 		message.channel.send('La plus \"Ca va\"! 5/10 !!');
 	}else if(message.toString().toLowerCase().match(/^je t\'? ?aime al\-? ?tair/)){
         if(message.author.id != "517337001330999296"){
