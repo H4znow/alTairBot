@@ -7,7 +7,7 @@ exports.react = message => {
         message.react("🇦");
         message.react("🇧");
         message.react("🇨");
-    } else if(message2.match(/^Quoi{1,}\s\?{0,}$/)){
+    } else if(message2.match(/^quoi{1,}\s\?{0,}$/)){
         message.react("🇫");
         message.react("🇪");
         message.react("🇺");
