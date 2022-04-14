@@ -10,6 +10,8 @@ exports.dmDiscu = message => {
     const answer_Random_Person = [`Wsh la team`, `Désolé mais je suis avec Mee6.`, `Wsh d\'ou tu glisses dans mes mps ?`, `Quoi encore ? ||Ils soulent ces humains||`, `T'es pas mal foutu pour un humain`, `💤 je fais dodo`, `Hello ! Ici Al-Tair pour vous servir ! Non je decc passez votre chemin <:haznowCat:916772785014054912>`, `J'aime les cookies. Et vu que je t'aime bien, tiens 🍪`,`Oh ! oh ! J'ai une blague ! C'est l'histoire d'un rebeu qui..heu non rien haznow va me déconnecter.`];
     const answer_Sousou = [`Ne dis a rien a Mee6 mais t'es grrr 😳`, `Wsh tu veux te battre ?`, `J'ai un gateau pour toi : ||Lol tu t'es faite avoir||`, `On m'a dit que t'es une vachette <:hihi:848873245758324796>`, `On devrait t'arrêter pour excès de beauté sur la voie publique.`, `Ton père travaille chez Nintendo ? Parce que tu as un corps de DS.`, `Ton père est peintre ? Parce que tu es un véritable chef-d’œuvre.`, `Ton père est bien pilote ? Parce que tu es un avion de chasse. **NON** ! J'annule la disquette. Ca voudrait dire que tu viens des iles Canaries coin coin <:oula:848505937856692254>`, `En temps normal, je suis un très bon nageur, mais là je ne comprends pas... Je me noie dans tes yeux. Bah non je suis un bot...Oh; en temps normal, je suis un très bon nageur, mais là je ne comprends pas... Je me court-circuite dans tes yeux. `, `T'es encore la pour les disquettes ! J'arrete si non Mee6 va me larguer 🥺`];
     const answer_Alex = [`Alex mon reuf sur !`, `Alex t'as pas un cookie ? L'autre la qu'on appelle Sasa (heu sarah pardon) m'a tout pris 😠`, `Pssst Alex, t'es beau`, `Je peux te refaire le four ?`, `Alex laisse moi etre ton windows xp, je prenderai mon temps`, `Wsh wsh`, `Mon pote !!`, `Un alex, c'est mieux qu'une ex !`, `Raourrrrrr`]
+    const answer_Sun = [`Habibati <:Frog_owi:899344705186316288>`, `Shaytan recue !`, `Wsh bien ou quoi oukhty ?`, `Attends je prie la !`, `Ton pere arabe a voler toute les etoiles pour les mettre dans tes yeux <a:pepeshy:895967042681851934>`];
+    const answer_Raven = [`7ayatiiii ! <:ouioui:868792198492221491>`, `J'ai une blague ? "Qu'est ce qui rends 9 personne sur 10 heureuse ?"\n-un viol collectif`, `Mommy sugar, ca va?`, `Je te donne 10/10 ! (grr)` ];
     const value1 = 0;
     const value2 = 1;
     var number = 0;
@@ -31,6 +33,28 @@ exports.dmDiscu = message => {
         if(chosenValue == 0){
             number = Math.floor(Math.random() * (answer_Alex.length) );
             answer = ansewer_Alex[number];
+        }else{
+            number = Math.floor(Math.random() * (answer_Random_Person.length) );
+            answer = answer_Random_Person[number];
+        }
+        message.channel.send(answer)
+        return;
+        //sun
+    }else if(message.author.id == "405670347761778688"){
+        if(chosenValue == 0){
+            number = Math.floor(Math.random() * (answer_Sun.length) );
+            answer = answer_Sun[number];
+        }else{
+            number = Math.floor(Math.random() * (answer_Random_Person.length) );
+            answer = answer_Random_Person[number];
+        }
+        message.channel.send(answer)
+        return;
+        //Raven
+    }else if(message.author.id == "341305833268838402"){
+        if(chosenValue == 0){
+            number = Math.floor(Math.random() * (answer_Raven.length) );
+            answer = answer_Raven[number];
         }else{
             number = Math.floor(Math.random() * (answer_Random_Person.length) );
             answer = answer_Random_Person[number];

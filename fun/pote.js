@@ -5,10 +5,10 @@ exports.pote = message => {
 	const cmd = args.shift().toLowerCase();
 	const answer = args.join(' ');
 	if (cmd == index.p + 'sarah') {
-		message.channel.send('La plus belle !<:ouioui:868792198492221491>');
+		message.channel.send('La plus belle ! <:ouioui:868792198492221491>');
 	}
 	else if (cmd == index.p + 'alex') {
-		message.channel.send('Mon meilleur pote !<:ouioui:868792198492221491>');
+		message.channel.send('Mon meilleur pote ! <:ouioui:868792198492221491>');
 	}
 	else if (cmd == index.p + 'panda') {
 		message.channel.send(`C\'est notre mascotte ! <:Frog_owi:899344705186316288>`);
@@ -39,14 +39,25 @@ exports.pote = message => {
 	} else if(cmd == index.p + 'haznow'){
 		message.author.send("Pouet !").catch(err => {console.log(err)});
 	}else if (cmd == index.p + 'sun') {
-		message.channel.send('Chemsouna ! <:hihi:848873245758324796>');
+		message.channel.send('Chemsouna habibati ! <:hihi:848873245758324796>');
 	}else if (cmd == index.p + 'raven') {
-		message.channel.send('La plus \"Ca va\"! 5/10 !!');
-	}else if(message.toString().toLowerCase().match(/^je t\'? ?aime al\-? ?tair/)){
+		message.channel.send('7ayati ! <:ouioui:868792198492221491>');
+	}else if(message.toString().toLowerCase().match(/^je t\'? ?aime al\-? ?tair/) || message.toString().toLowerCase().match(/al\-? ?tair^je t\'? ?aime/) || message.toString().toLowerCase().match(/<@867034511196160060> ? ?je t\'? ?aime/) ||  message.toString().toLowerCase().match(/je t\'? ?aime ?<@867034511196160060> ? ?/)){
         if(message.author.id != "517337001330999296"){
-            message.reply("Merci 😳")
+			var answer2 = " ";
+			const answer_Random_Person = [`Grrrrrr`,`Merci 😳`, `Bonjour deja ?`, `On est sur Discord, pas tinder poto.`];
+			number = Math.floor(Math.random() * (answer_Random_Person.length) );
+            answer2 = answer_Random_Person[number];
+            message.reply(answer2);
             return;
         }
+		
         message.reply("Moi aussi ❤️");
-    }
+    }else if (cmd == index.p + 'taleb'){
+		message.channel.send(`El boss <:haznowCat:916772785014054912>`);
+	}else if (cmd == index.p + 'taleb'){
+		message.channel.send(`El boss <:haznowCat:916772785014054912>`);
+	}else if (cmd == index.p + 'sheytasun'){
+		message.channel.send(`<:sheytasun:961799016155344898>`);
+	}
 };
