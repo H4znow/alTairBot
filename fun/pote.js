@@ -52,8 +52,8 @@ exports.pote = message => {
             return;
         }
         message.reply("Moi aussi ❤️");
-    }else if (cmd == index.p + 'taleb'){
-		message.channel.send(`El boss <:haznowCat:916772785014054912>`);
+    }else if (cmd == index.p + 'kami'){
+		message.channel.send(`Kaminouniiii <:Frog_owi:899344705186316288>`);
 	}else if (cmd == index.p + 'taleb'){
 		message.channel.send(`Quel connard <:haznowCat:916772785014054912>`);
 	}else if (cmd == index.p + 'sheytasun'){
