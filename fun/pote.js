@@ -62,5 +62,7 @@ exports.pote = message => {
 		message.channel.send('Notre zezet nationale ! <a:spffft:899344727281909801>');
 	}else if (cmd == index.p + 'roro') {
 		message.channel.send('Il vous paye votre congé en Alaska ou au Cambodge ! ✈️');
+	}else if (cmd == index.p + 'nala') {
+		message.channel.send('C\'est qui ?');
 	}
 };
