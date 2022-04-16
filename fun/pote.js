@@ -63,6 +63,10 @@ exports.pote = message => {
 	}else if (cmd == index.p + 'roro') {
 		message.channel.send('Il vous paye votre congé en Alaska ou au Cambodge ! ✈️');
 	}else if (cmd == index.p + 'nala') {
-		message.channel.send('C\'est qui ?');
+		message.channel.send('La star ! ⭐');
+	}else if (cmd == index.p + 'kazuki') {
+		message.channel.send('Le psy tah Lewandoski <a:note:964843749261869096>');
+	}else if (cmd == index.p + 'revox') {
+		message.channel.send('Tema la taille du rat <a:rat1:964843955684540496>');
 	}
 };
