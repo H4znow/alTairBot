@@ -37,9 +37,9 @@ exports.pote = message => {
 	} else if(cmd == index.p + 'kyky'){
 		message.channel.send("Il est mute plus vite que son ombre... Mais on l'aime quand même !");
 	} else if(cmd == index.p + 'haznow'){
-		message.author.send("Pouet !").catch(err => {console.log(err)});
+		message.author.send("PTDR C'EST QUI LUI ?").catch(err => {console.log(err)});
 	}else if (cmd == index.p + 'sun') {
-		message.channel.send('Chemsouna habibati ! <:hihi:848873245758324796>');
+		message.channel.send('Chemsi habibati ! <:hihi:848873245758324796>');
 	}else if (cmd == index.p + 'raven') {
 		message.channel.send('7ayati ! <:ouioui:868792198492221491>');
 	}else if(message.toString().toLowerCase().match(/^je t\'? ?aime al\-? ?tair/) || message.toString().toLowerCase().match(/al\-? ?tair^je t\'? ?aime/) || message.toString().toLowerCase().match(/<@867034511196160060> ? ?je t\'? ?aime/) ||  message.toString().toLowerCase().match(/je t\'? ?aime ?<@867034511196160060> ? ?/)){
@@ -51,13 +51,16 @@ exports.pote = message => {
             message.reply(answer2);
             return;
         }
-		
         message.reply("Moi aussi ❤️");
     }else if (cmd == index.p + 'taleb'){
 		message.channel.send(`El boss <:haznowCat:916772785014054912>`);
 	}else if (cmd == index.p + 'taleb'){
-		message.channel.send(`El boss <:haznowCat:916772785014054912>`);
+		message.channel.send(`Quel connard <:haznowCat:916772785014054912>`);
 	}else if (cmd == index.p + 'sheytasun'){
 		message.channel.send(`<:sheytasun:961799016155344898>`);
+	}else if (cmd == index.p + 'zetsuma') {
+		message.channel.send('Notre zezet nationale ! <a:spffft:899344727281909801>');
+	}else if (cmd == index.p + 'roro') {
+		message.channel.send('Il vous paye votre congé en Alaska ou au Cambodge ! ✈️');
 	}
 };
