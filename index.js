@@ -22,7 +22,7 @@ client.once('ready', () => {
         setInterval(()=>{
                 if(!affichage){
                         //nombreMembre = client.guilds.cache.get("841455115445600317").memberCount;
-                        client.user.setActivity(`dodo`, { type: 'PLAYING' });
+                        client.user.setActivity(`voler comme un arbre 🌳`, { type: 'PLAYING' });
                         affichage = 1;
                 } else {
                         client.user.setActivity('twitch.tv/hazzuna_', { type: 'WATCHING' });

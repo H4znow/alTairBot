@@ -20,7 +20,8 @@ exports.help = message => {
         .addField(`\u200B`, `\u200B`, false)
         .addField(`__Commandes fun:__`, `\u200B`, false)
         .addField(`Ping : `, `répond \`pong\` (utile pour vérifier si le bot est en ligne)`, true)
-        .addField(`Préfix + pseudo : `,`des commandes personnalisées pour les meilleurs membres (Ne pas demander)`, true)
+        .addField(`Un pseudonyme : `,`des commandes personnalisées pour les meilleurs membres (Ne pas demander)`, true)
+        .addField(`Q : `,`Posez une question à Al-Tair. Il a réponse à tout !`, true)
         .addField(`\u200B`, `\u200B`, false)
         .addField(`__Commandes organisation:__`, `\u200B`, false)
         .addField(`Chuchoter : `, `envoies \`${index.p}chuchoter\` à Al-Tair en message privé pour plus d'info.`, true)
@@ -28,7 +29,7 @@ exports.help = message => {
         .addField(`Retour: `, `Cette commande ne fonctionne __que__ dans <#878527923844427787> et n'est utiliable __que__ par un modérateur ou un admin. Elle permet de donner un feedback sur les propositions. Envoies \`${index.p}retour\` pour plus d'info.`, true)
         .setTimestamp()
         .setFooter(`Vous êtes beaux`, 'https://i.postimg.cc/nhZbcy3d/aigle.png');
-    message.author.send({ embeds: [helpMess] }).then(mess =>{ message.delete() })
+    message.author.send({ embeds: [helpMess] }).then(mess =>{ if(message.channel.type != "DM") message.delete(); })
     .catch(err =>{ 
     message.reply(`<:no:916448935948746772> Je ne peux pas t'envoyer de Dm.`,
     console.log(err)); })
