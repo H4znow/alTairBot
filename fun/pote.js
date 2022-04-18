@@ -68,5 +68,7 @@ exports.pote = message => {
 		message.channel.send('Le psy tah Lewandoski <a:note:964843749261869096>');
 	}else if (cmd == index.p + 'revox') {
 		message.channel.send('Tema la taille du rat <a:rat1:964843955684540496>');
+	}else if (cmd == index.p + 'lhocost') {
+		message.channel.send('Pingu ! <:MPengu_Emote2:965644261594902549>');
 	}
 };

@@ -3,7 +3,7 @@ const { MessageEmbed } = require('discord.js');
 
 exports.questionning = message =>{
     if(message.author.bot)return;
-    if(!(message.content.startsWith(index.p+"q"))) return;
+    if(!(message.content.startsWith(index.p+"q")||message.content.startsWith(index.p+"Q"))) return;
     const args = message.content.split(' ');
     args.shift();
     const answer= ["Oui.", "Probablement.", "Non.", "C'est certain.", "Impossible.", "C'est certainement vrai.", "Je ne sais pas...", "Google existe.", "J'aurais tendance à dire non.", "La fameuse question a 1M."]
