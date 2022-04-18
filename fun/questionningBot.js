@@ -6,7 +6,7 @@ exports.questionning = message =>{
     if(!(message.content.startsWith(index.p+"q")||message.content.startsWith(index.p+"Q"))) return;
     const args = message.content.split(' ');
     args.shift();
-    const answer= ["Oui.", "Probablement.", "Non.", "C'est certain.", "Impossible.", "C'est certainement vrai.", "Je ne sais pas...", "Google existe.", "J'aurais tendance à dire non.", "La fameuse question a 1M."]
+    const answer= ["Oui.", "Probablement.", "Non.", "C'est certain.", "Impossible.", "C'est certainement vrai.", "Je ne sais pas...", "Google existe.", "J'aurais tendance à dire non.", "La fameuse question a 1M.", "C'est un non.", "Vraiment pas.", "Je ne sais pas." ]
     const messAnswer = new MessageEmbed()
         .setColor('#fab534')
         .setAuthor(`${message.author.username}#${message.author.tag}`, `${message.author.displayAvatarURL()}`)
