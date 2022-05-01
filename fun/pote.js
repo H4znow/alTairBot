@@ -45,7 +45,7 @@ exports.pote = message => {
 	}else if(message.toString().toLowerCase().match(/^je t\'? ?aime al\-? ?tair/) || message.toString().toLowerCase().match(/al\-? ?tair^je t\'? ?aime/) || message.toString().toLowerCase().match(/<@867034511196160060> ? ?je t\'? ?aime/) ||  message.toString().toLowerCase().match(/je t\'? ?aime ?<@867034511196160060> ? ?/)){
         if(message.author.id != "517337001330999296"){
 			var answer2 = " ";
-			const answer_Random_Person = [`Grrrrrr`,`Merci 😳`, `Bonjour deja ?`, `On est sur Discord, pas tinder poto.`];
+			const answer_Random_Person = [`Grrrrrr`,`Merci 😳`, `Bonjour deja ?`, `On est sur Discord, pas tinder poto.`,`oh..moi..moi aussi...`];
 			number = Math.floor(Math.random() * (answer_Random_Person.length) );
             answer2 = answer_Random_Person[number];
             message.reply(answer2);
@@ -70,5 +70,13 @@ exports.pote = message => {
 		message.channel.send('Tema la taille du rat <a:rat1:964843955684540496>');
 	}else if (cmd == index.p + 'lhocost') {
 		message.channel.send('Pingu ! <:MPengu_Emote2:965644261594902549>');
+	}else if (cmd == index.p + 'keilie') {
+		message.channel.send('La sorcière qui séduit tout les mecs pris du serveur avec sa sorcellerie et ses djnouns 🧙‍♀️');
+	}else if (cmd == index.p + 'choupette') {
+		message.channel.send('Ma bébou ! <:ouioui:868792198492221491>');
+	}else if (cmd == index.p + 'rio') {
+		message.channel.send('Le terroriste explosif 💣');
+	}else if (cmd == index.p + 'neemy') {
+		message.channel.send('Ta gueule.');
 	}
 };
