@@ -76,7 +76,9 @@ exports.pote = message => {
 		message.channel.send('Ma bébou ! <:ouioui:868792198492221491>');
 	}else if (cmd == index.p + 'rio') {
 		message.channel.send('Le terroriste explosif 💣');
-	}else if (cmd == index.p + 'neemy') {
-		message.channel.send('Ta gueule.');
+	}else if (cmd == index.p + 'inès' || cmd == index.p + 'ines' ) {
+		message.channel.send('Fan de kpop, crush sur des coréens torses nus, gaga de chat, elle peut se réveler drole parfois mais elle prend vite le melon.');
+	}else if (cmd == index.p + 'obisu') {
+		message.channel.send('T\'es une vraie bitch, toi.\n https://images-ext-2.discordapp.net/external/nlVd_XCDcmAr8zbCJhjZVdj3nrgbQvBprIolDlP9EZ8/https/media.tenor.com/Jiy7uCptmlgAAAPo/shauna-sand-con.mp4');
 	}
 };
