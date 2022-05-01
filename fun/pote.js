@@ -65,7 +65,7 @@ exports.pote = message => {
 	}else if (cmd == index.p + 'nala') {
 		message.channel.send('La star ! ⭐');
 	}else if (cmd == index.p + 'kazuki') {
-		message.channel.send('Le psy tah Lewandoski <a:note:964843749261869096>');
+		message.channel.send('SIUUUUUUUUUUUUU');
 	}else if (cmd == index.p + 'revox') {
 		message.channel.send('Tema la taille du rat <a:rat1:964843955684540496>');
 	}else if (cmd == index.p + 'lhocost') {
@@ -79,6 +79,6 @@ exports.pote = message => {
 	}else if (cmd == index.p + 'inès' || cmd == index.p + 'ines' ) {
 		message.channel.send('Fan de kpop, crush sur des coréens torses nus, gaga de chat, elle peut se réveler drole parfois mais elle prend vite le melon.');
 	}else if (cmd == index.p + 'obisu') {
-		message.channel.send('T\'es une vraie bitch, toi.\n https://images-ext-2.discordapp.net/external/nlVd_XCDcmAr8zbCJhjZVdj3nrgbQvBprIolDlP9EZ8/https/media.tenor.com/Jiy7uCptmlgAAAPo/shauna-sand-con.mp4');
+		message.channel.send('T\'es une vraie bitch, toi.👠');
 	}
 };
