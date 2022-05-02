@@ -65,7 +65,7 @@ exports.pote = message => {
 	}else if (cmd == index.p + 'nala') {
 		message.channel.send('La star ! ⭐');
 	}else if (cmd == index.p + 'kazuki') {
-		message.channel.send('SIUUUUUUUUUUUUU');
+		message.channel.send('C\'est un bg qui se fait charo par tout le monde (logique). Mais faites attention...Une Kamiry sauvage défend son territoire férocement.');
 	}else if (cmd == index.p + 'revox') {
 		message.channel.send('Tema la taille du rat <a:rat1:964843955684540496>');
 	}else if (cmd == index.p + 'lhocost') {
@@ -80,5 +80,7 @@ exports.pote = message => {
 		message.channel.send('Fan de kpop, crush sur des coréens torses nus, gaga de chat, elle peut se réveler drole parfois mais elle prend vite le melon.');
 	}else if (cmd == index.p + 'obisu') {
 		message.channel.send('T\'es une vraie bitch, toi.👠');
+	}else if (cmd == index.p + 'angesun') {
+		message.channel.send('<:angesun:970831577124851722>');
 	}
 };
