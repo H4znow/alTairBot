@@ -12,8 +12,9 @@ exports.chuchotement = message => {
     //le message ne provient pas d'un DM
     if(!(message.channel.type == "DM")) return;
     //verify que message commence par "Chuchtoement"
-    const args = message.content.toLowerCase().split(' ');
-    const cmd = args.shift();
+    const args = message.content.split(' ');
+    const cmd = args.shift().toLowerCase();
+    args.join(" ");
     var mess;
     if(cmd != index.p + "chuchoter" && cmd != index.p + "anonyme" ) return;
     if(cmd == index.p + "anonyme"){
@@ -21,7 +22,7 @@ exports.chuchotement = message => {
         channelid = client.channels.cache.get("970980338564227072");
     }
     if(cmd != index.p == "anonyme") SHRserver = true;
-    if(args.length < 1) return message.reply(`Hello bichon !<:Love:856559537368596530>\n🎵Tu ressens le besoin de partager une histoire/info, de confier un problème, de parler de ta vie privée en tout __anonymat__ ?\n <:rightarrow:917774065769529385> Envoies \`..chuchoter\` puis ce que tu veux partager !\nAttention , le message peut seulement contenir du texte et maximum __une seule__ image pour illustrer tes propos (-> pas de gifs, stickers, 2 images, etc)\n <:ban:916686563847593995> *Si le message est de nature à troll (et seulement dans ce cas), un admin pourra lever l'anonymat dans le seul but de vous sanctionner !*`);
+    if(args.length < 1) return message.reply(`Hello bichon !<:Love:856559537368596530>\n🎵Tu ressens le besoin de partager une histoire/info, de confier un problème, de parler de ta vie privée en tout __anonymat__ ?\n <:rightarrow:917774065769529385> Envoies \`${cmd}\` puis ce que tu veux partager !\nAttention , le message peut seulement contenir du texte et maximum __une seule__ image pour illustrer tes propos (-> pas de gifs, stickers, 2 images, etc)\n <:ban:916686563847593995> *Si le message est de nature à troll (et seulement dans ce cas), un admin pourra lever l'anonymat dans le seul but de vous sanctionner !*`);
     
     //Il faut ajouter un systeme de reaction pour voir si la personne veut que son message soit devoile ou pas dans le salon
     //rectifier les stickers
