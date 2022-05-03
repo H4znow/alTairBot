@@ -24,7 +24,7 @@ exports.help = message => {
         .addField(`Q : `,`Posez une question à Al-Tair. Il a réponse à tout !`, true)
         .addField(`\u200B`, `\u200B`, false)
         .addField(`__Commandes organisation:__`, `\u200B`, false)
-        .addField(`Chuchoter : `, `envoies \`${index.p}chuchoter\` à Al-Tair en message privé pour plus d'info.`, true)
+        .addField(`Chuchoter (PoopyGang) || anonyme (SHR Gamin) : `, `envoies \`${index.p}chuchoter\`||\`${index.p}anonyme\` à Al-Tair en message privé pour plus d'info.`, true)
         .addField(`Su: `, `Cette commande ne fonctionne __que__ dans <#878527923844427787>. Utilises-la pour proposer une idée ou débuter un sondage`, true)
         .addField(`Retour: `, `Cette commande ne fonctionne __que__ dans <#878527923844427787> et n'est utiliable __que__ par un modérateur ou un admin. Elle permet de donner un feedback sur les propositions. Envoies \`${index.p}retour\` pour plus d'info.`, true)
         .setTimestamp()

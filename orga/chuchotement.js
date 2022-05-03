@@ -4,9 +4,9 @@ const { MessageEmbed } = require('discord.js');
 
 exports.chuchotement = message => {
     //channel chuchotement
-    const channel = client.channels.cache.get("917454560514146304");
+    var channel = client.channels.cache.get("917454560514146304");
     //channel identifiant 
-    const channelid = client.channels.cache.get("917501926520786974");
+    var channelid = client.channels.cache.get("917501926520786974");
     //Message venant d'un bot
     if(message.author.bot) return;
     //le message ne provient pas d'un DM
@@ -15,7 +15,12 @@ exports.chuchotement = message => {
     const args = message.content.toLowerCase().split(' ');
     const cmd = args.shift();
     var mess;
-    if(cmd != index.p + "chuchoter") return;
+    if(cmd != index.p + "chuchoter" && cmd != index.p + "anonyme" ) return;
+    if(cmd == index.p + "anonyme"){
+        channel = client.channels.cache.get("970980086956294194");
+        channelid = client.channels.cache.get("970980338564227072");
+    }
+    if(cmd != index.p == "anonyme") SHRserver = true;
     if(args.length < 1) return message.reply(`Hello bichon !<:Love:856559537368596530>\n🎵Tu ressens le besoin de partager une histoire/info, de confier un problème, de parler de ta vie privée en tout __anonymat__ ?\n <:rightarrow:917774065769529385> Envoies \`..chuchoter\` puis ce que tu veux partager !\nAttention , le message peut seulement contenir du texte et maximum __une seule__ image pour illustrer tes propos (-> pas de gifs, stickers, 2 images, etc)\n <:ban:916686563847593995> *Si le message est de nature à troll (et seulement dans ce cas), un admin pourra lever l'anonymat dans le seul but de vous sanctionner !*`);
     
     //Il faut ajouter un systeme de reaction pour voir si la personne veut que son message soit devoile ou pas dans le salon
@@ -66,7 +71,7 @@ exports.chuchotement = message => {
         embedMessage.react("856559537368596530");
         const url = embedMessage.url;
         channelid.send(`le message anonyme du \`${index.date}\` a été envoyé par ||\`${message.author.id}\`|| \n lien message : ${url}`);
-        message.reply(`Ton message a été envoyé avec succès dans <#917454560514146304> <:Love:856559537368596530> <:Hype:856559664610541579>`)
+        message.reply(`Ton message a été envoyé avec succès dans <#${channel}> <:Love:856559537368596530> <:Hype:856559664610541579>`)
     }).catch(err => {console.log(err)});
     
 }
