@@ -52,5 +52,5 @@ client.on("messageCreate", require("./fun/questionningBot").questionning);
 client.login(process.env.TOKEN);
 
 
-var nextTime = new Date(); 
+var nextTime = Date.now(); 
 exports.nextTime = nextTime;
