@@ -24,6 +24,15 @@ exports.chuchotement = message => {
     if(cmd != index.p == "anonyme") SHRserver = true;
     if(args.length < 1) return message.reply(`Hello bichon !<:Love:856559537368596530>\n🎵Tu ressens le besoin de partager une histoire/info, de confier un problème, de parler de ta vie privée en tout __anonymat__ ?\n <:rightarrow:917774065769529385> Envoies \`${cmd}\` puis ce que tu veux partager !\nAttention , le message peut seulement contenir du texte et maximum __une seule__ image pour illustrer tes propos (-> pas de gifs, stickers, 2 images, etc)\n <:ban:916686563847593995> *Si le message est de nature à troll (et seulement dans ce cas), un admin pourra lever l'anonymat dans le seul but de vous sanctionner !*`);
     
+    //Instaurer un delai de 5mn
+    var currentTime = Date.now();
+    if(currentTime < index.nextTime){
+        var RestTime = index.nextTime-currentTime;
+        RestTime = new Date(RestTime);
+        message.reply(`<:no:916448935948746772> | Il vous faut attendre ${RestTime.getMinutes()} minutes et ${RestTime.getSeconds()} secondes avant d'utiliser la commande. [Il y a un délai de 5 minutes]`);
+        return;
+    } 
+    index.nextTime = currentTime + 300000;
     //Il faut ajouter un systeme de reaction pour voir si la personne veut que son message soit devoile ou pas dans le salon
     //rectifier les stickers
     
@@ -32,7 +41,7 @@ exports.chuchotement = message => {
     const message_contain_oneAttachement_WITH_text =  message.attachments.size == 1 && message.content.length > 1;
     const message_contain_sticker = message.stickers.size > 0;
     var embed_with_image = false;
-    const messageError = `<:no:916448935948746772> Ouch ! __Attention__, le message ne doit contenir que du texte et facultativement __une unique__ image pour illustrer tes propos (donc ni gifs, ni stickers, ni deux images , etc). <:Love:856559537368596530>`;
+    const messageError = `<:no:916448935948746772> | Ouch ! __Attention__, le message ne doit contenir que du texte et facultativement __une unique__ image pour illustrer tes propos (donc ni gifs, ni stickers, ni deux images , etc). <:Love:856559537368596530>`;
     if(message_contain_sticker){
         message.reply(messageError);
         return;
@@ -71,8 +80,10 @@ exports.chuchotement = message => {
     channel.send({ embeds: [chuchotement] }).then(embedMessage =>{
         embedMessage.react("856559537368596530");
         const url = embedMessage.url;
-        channelid.send(`le message anonyme du \`${index.date}\` a été envoyé par ||\`${message.author.id}\`|| \n lien message : ${url}`);
-        message.reply(`Ton message a été envoyé avec succès dans <#${channel}> <:Love:856559537368596530> <:Hype:856559664610541579>`)
+        currentTime = Math.floor(Date.now() / 1000);
+
+        channelid.send(`le message anonyme du <t:${currentTime}:F> a été envoyé par ||\`${message.author.id}\`|| \n lien message : ${url}`);
+        message.reply(`Ton message a été envoyé avec succès dans ${channel} <:Love:856559537368596530> <:Hype:856559664610541579>`)
     }).catch(err => {console.log(err)});
     
 }

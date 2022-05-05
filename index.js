@@ -52,11 +52,5 @@ client.on("messageCreate", require("./fun/questionningBot").questionning);
 client.login(process.env.TOKEN);
 
 
-var currentdate = new Date(); 
-var datetime = currentdate.getDate() + "/"
-    + (currentdate.getMonth()+1)  + "/" 
-    + currentdate.getFullYear() + " @ "  
-    + currentdate.getHours() + ":"  
-    + currentdate.getMinutes() + ":" 
-    + currentdate.getSeconds();
-exports.date = datetime;
+var nextTime = new Date(); 
+exports.nextTime = nextTime;
