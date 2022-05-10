@@ -22,10 +22,10 @@ client.once('ready', () => {
         setInterval(()=>{
                 if(!affichage){
                         //nombreMembre = client.guilds.cache.get("841455115445600317").memberCount;
-                        client.user.setActivity(`voler comme un arbre 🌳`, { type: 'PLAYING' });
+                        client.user.setActivity(`Admirer Haznow`, { type: 'PLAYING' });
                         affichage = 1;
                 } else {
-                        client.user.setActivity('twitch.tv/hazzuna_', { type: 'WATCHING' });
+                        client.user.setActivity('Soutenir Sunoupette', { type: 'WATCHING' });
                         affichage = 0;
                 }
         },600000)
