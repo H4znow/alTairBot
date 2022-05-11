@@ -22,10 +22,10 @@ client.once('ready', () => {
         setInterval(()=>{
                 if(!affichage){
                         //nombreMembre = client.guilds.cache.get("841455115445600317").memberCount;
-                        client.user.setActivity(`Admirer Haznow`, { type: 'PLAYING' });
+                        client.user.setActivity(`les étoiles que père a volé`, { type: 'WATCHING' });
                         affichage = 1;
                 } else {
-                        client.user.setActivity('Soutenir Sunoupette', { type: 'WATCHING' });
+                        client.user.setActivity('hamoud habibi', { type: 'PLAYING' });
                         affichage = 0;
                 }
         },600000)

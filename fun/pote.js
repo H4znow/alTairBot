@@ -82,5 +82,29 @@ exports.pote = message => {
 		message.channel.send('T\'es une vraie bitch, toi.👠');
 	}else if (cmd == index.p + 'angesun') {
 		message.channel.send('<:angesun:970831577124851722>');
+	}else if (cmd == index.p + 'badboy') {
+		message.channel.send('Haznoupette, la plus belle meuf, mais aussi la plus dramatique du serveur 🤭');
+	}else if (cmd == index.p + 'arabe') {
+		message.channel.send('BOUM !! 💣');
+	}else if (cmd == index.p + 'psycho') {
+		message.channel.send('AMOGUS SIUUUUUUUU dame dane dame yo');
+	}else if (cmd == index.p + 'darkFury' || cmd == index.p + 'darkfury') {
+		message.channel.send('Le mari à Sun, elle fait les dou\'aa sur lui pour que Keilie y touche pas 🤲');
+	}else if (cmd == index.p + 'einnus') {
+		message.channel.send('La femme de DarkFury, pas touche sinon il sera pas content. Il est coincé avec elle et elle est autant dramatique que Haznoupette <:hihi:848873245758324796>');
+	}else if (cmd == index.p + 'haras') {
+		message.channel.send('Elle pleure la shinobi <:sad2:848875755537956864>');
+	}else if (cmd == index.p + 'xela') {
+		message.channel.send('Il traque la shinobi 🔪');
+	}else if (cmd == index.p + 'yrufkrad') {
+		message.channel.send('Le mari de Sun, pas touche sinon elle vous goume, vous ban, vous bloque, hack son compte, vous bloque.');
+	}else if (cmd == index.p + 'nevar') {
+		message.channel.send('Si elle te dit bonjour, baisse les yeux, si elle te demande quelque chose, fais le sans te poser de question, soumets toi à la reine du serveur.');
+	}else if (cmd == index.p + 'ikuzak') {
+		message.channel.send('Tu sais juste qu\'il est bg, sans plus d\'information.');
+	}else if (cmd == index.p + 'aurore') {
+		message.channel.send('Roro, la belle princesse aux cheveux longs et soyeux, attachés en chignon. \👸');
+	}else if (cmd == index.p + 'imak') {
+		message.channel.send('Une libanaise autant bonne que le Baba Ghanouj, mariée à Kazuki.');
 	}
 };
