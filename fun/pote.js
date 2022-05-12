@@ -106,5 +106,7 @@ exports.pote = message => {
 		message.channel.send('Roro, la belle princesse aux cheveux longs et soyeux, attachés en chignon. \👸');
 	}else if (cmd == index.p + 'imak') {
 		message.channel.send('Une libanaise autant bonne que le Baba Ghanouj, mariée à Kazuki.');
+	}else if (cmd == index.p + 'valky') {
+		message.channel.send('Elle est à Zet\'s pas touche !');
 	}
 };
