@@ -14,5 +14,10 @@ exports.react = message => {
         message.react("🇷");
     } else if(message2.match(/ *\bbot\b/)){
         message.react("👀");
-    } 
+    }else if(message2.match(/ *\bchoupette\b/)){
+        if(message.author.id != "517337001330999296")return;
+        message.react("🇬");
+        message.react("🇷");
+        message.react("🇷");
+    }  
 }

@@ -108,5 +108,7 @@ exports.pote = message => {
 		message.channel.send('Une libanaise autant bonne que le Baba Ghanouj, mariée à Kazuki.');
 	}else if (cmd == index.p + 'valky') {
 		message.channel.send('Elle est à Zet\'s pas touche !');
+	}else if (cmd == index.p + 'xena') {
+		message.channel.send('Elle, c\'est papuchette, une fille incroyable et trop choupi ! Si vous la croisez, dites lui bonjour, pas souvent qu\'on voit une fille en or ! 🧸');
 	}
 };
