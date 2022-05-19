@@ -71,7 +71,7 @@ exports.pote = message => {
 	}else if (cmd == index.p + 'lhocost') {
 		message.channel.send('Pingu ! <:MPengu_Emote2:965644261594902549>');
 	}else if (cmd == index.p + 'keilie') {
-		message.channel.send('La sorcière qui séduit tout les mecs pris du serveur avec sa sorcellerie et ses djnouns 🧙‍♀️');
+		message.channel.send(`grrrr <a:haznowkiss:976972949787664404><a:keilikiss:976972930489647104>`);
 	}else if (cmd == index.p + 'choupette') {
 		message.channel.send('Ma bébou ! <:ouioui:868792198492221491>');
 	}else if (cmd == index.p + 'rio') {

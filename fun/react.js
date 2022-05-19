@@ -7,7 +7,7 @@ exports.react = message => {
         message.react("🇦");
         message.react("🇧");
         message.react("🇨");*/
-    } else if(message2.match(/^quoi{1,} ?\?{0,}$/)){
+    } else if(message2.match(/^quoi{1,} ?\?*$/)){
         message.react("🇫");
         message.react("🇪");
         message.react("🇺");
@@ -15,9 +15,16 @@ exports.react = message => {
     } else if(message2.match(/ *\bbot\b/)){
         message.react("👀");
     }else if(message2.match(/ *\bchoupette\b/)){
-        if(message.author.id != "517337001330999296")return;
+        if(message.author.id != "517337001330999296")return; 
         message.react("🇬");
         message.react("🇷");
         message.react("🇷");
+    }else if(message2.match(/ *\bbelge\b/)){
+        if(message.author.id != "629407078175473664")return; 
+        message.react(`🍟`);
+        message.react(`🍺`);
+    }else if(message2.match(/(^o{1,}m{1,}g{1,})$/)){
+        if(message.author.id != "517337001330999296")return; 
+        message.react(`🦄`);
     }  
 }
