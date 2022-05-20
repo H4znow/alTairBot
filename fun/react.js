@@ -24,7 +24,7 @@ exports.react = message => {
         message.react(`🍟`);
         message.react(`🍺`);
     }else if(message2.match(/ *\bo{1,}m{1,}g{1,}\b/)){
-        if(message.author.id != "517337001330999296")return; 
+        if(message.author.id != "517337001330999296" && message.author.id != "405670347761778688")return; 
         message.react(`🦄`);
     }  
 }
