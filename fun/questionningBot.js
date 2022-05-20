@@ -9,7 +9,7 @@ exports.questionning = message =>{
     const answer= ["Oui.", "Probablement.", "Non.", "C'est certain.", "Impossible.", "C'est certainement vrai.", "Je ne sais pas...", "Google existe.", "J'aurais tendance à dire non.", "La fameuse question a 1M.", "C'est un non.", "Vraiment pas.", "Je ne sais pas.", "Ouais.", "Mais oui bien sur !... Non.", "J'aime vraiment pas l'idée.", "C'est une très bonne chose !"]
     const messAnswer = new MessageEmbed()
         .setColor('#fab534')
-        .setAuthor(`${message.author.username}#${message.author.tag}`, `${message.author.displayAvatarURL()}`)
+        .setAuthor(`${message.author.tag}`, `${message.author.displayAvatarURL()}`)
         .setThumbnail()
         .addField(`**Question** :`, `${args.join(" ")}`)
         .addField(`**Réponse** : `, `${answer[Math.floor(Math.random() * (answer.length) )]}`)

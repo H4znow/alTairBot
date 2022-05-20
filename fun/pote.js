@@ -110,5 +110,7 @@ exports.pote = message => {
 		message.channel.send('Elle est à Zet\'s pas touche !');
 	}else if (cmd == index.p + 'xena') {
 		message.channel.send('Elle, c\'est papuchette, une fille incroyable et trop choupi ! Si vous la croisez, dites lui bonjour, pas souvent qu\'on voit une fille en or ! 🧸');
+	}else if(cmd == index.p +"wonzah"){
+		message.channel.send(`<:HAZNOWAKBAR:977326635894308957>`);
 	}
 };
