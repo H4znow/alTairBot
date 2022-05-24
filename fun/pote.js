@@ -37,7 +37,7 @@ exports.pote = message => {
 	} else if(cmd == index.p + 'kyky'){
 		message.channel.send("Il est mute plus vite que son ombre... Mais on l'aime quand même !");
 	} else if(cmd == index.p + 'haznow'){
-		message.author.send("PTDR C'EST QUI LUI ?").catch(err => {console.log(err)});
+		message.author.send("Flemme de lui faire une commande. Allez next").catch(err => {console.log(err)});
 	}else if (cmd == index.p + 'sun') {
 		message.channel.send('Chemsi habibati ! <:hihi:848873245758324796>');
 	}else if (cmd == index.p + 'raven') {
@@ -112,5 +112,14 @@ exports.pote = message => {
 		message.channel.send('Elle, c\'est papuchette, une fille incroyable et trop choupi ! Si vous la croisez, dites lui bonjour, pas souvent qu\'on voit une fille en or ! 🧸');
 	}else if(cmd == index.p +"wonzah"){
 		message.channel.send(`<:HAZNOWAKBAR:977326635894308957>`);
+	}else if(cmd == index.p +"pixi"){
+		if(message.channel.id == "947672084195205130")message.channel.send(`Quand elle était petite, elle voulait avoir un zizi <:bouffePasHalal:978674972547485777>`);
+		message.channel.send(`Quand elle était petite, elle voulait avoir un zizi..`);
+	}else if(cmd == index.p +"tez"){
+		message.channel.send(`Il va aussi vite que la vitesse divine !`);
+	}else if (cmd == index.p + 'mary') {
+		message.channel.send(`<:Marie_poppins:978677137089380383>`);
+	}else if (cmd == index.p + 'chocolat') {
+		message.channel.send(`<:GIVEMECHOCOLATEBITCH:978677427750453258>`);
 	}
 };
