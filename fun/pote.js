@@ -37,7 +37,7 @@ exports.pote = message => {
 	} else if(cmd == index.p + 'kyky'){
 		message.channel.send("Il est mute plus vite que son ombre... Mais on l'aime quand même !");
 	} else if(cmd == index.p + 'haznow'){
-		message.author.send("Flemme de lui faire une commande. Allez next").catch(err => {console.log(err)});
+		message.author.send("Flemme de lui faire une commande. Allez next !").catch(err => {console.log(err)});
 	}else if (cmd == index.p + 'sun') {
 		message.channel.send('Chemsi habibati ! <:hihi:848873245758324796>');
 	}else if (cmd == index.p + 'raven') {
@@ -50,32 +50,22 @@ exports.pote = message => {
             answer2 = answer_Random_Person[number];
             message.reply(answer2);
             return;
-        }
+        }else if(message.author.id == "405670347761778688") return message.reply("MATATOUYA ❤️");
         message.reply("Moi aussi ❤️");
     }else if (cmd == index.p + 'kami'){
 		message.channel.send(`Kaminouniiii <:Frog_owi:899344705186316288>`);
-	}else if (cmd == index.p + 'taleb'){
-		message.channel.send(`Quel connard <:haznowCat:916772785014054912>`);
 	}else if (cmd == index.p + 'sheytasun'){
 		message.channel.send(`<:sheytasun:961799016155344898>`);
 	}else if (cmd == index.p + 'zetsuma') {
 		message.channel.send('Notre zezet nationale ! <a:spffft:899344727281909801>');
-	}else if (cmd == index.p + 'roro') {
-		message.channel.send('Il vous paye votre congé en Alaska ou au Cambodge ! ✈️');
-	}else if (cmd == index.p + 'nala') {
-		message.channel.send('La star ! ⭐');
 	}else if (cmd == index.p + 'kazuki') {
-		message.channel.send('C\'est un bg qui se fait charo par tout le monde (logique). Mais faites attention...Une Kamiry sauvage défend son territoire férocement.');
+		message.channel.send('C\'est un bg qui se fait charo par tout le monde (logique). Mais faites attention...Une âme charitable et sauvage défend son territoire.');
 	}else if (cmd == index.p + 'revox') {
 		message.channel.send('Tema la taille du rat <a:rat1:964843955684540496>');
-	}else if (cmd == index.p + 'lhocost') {
-		message.channel.send('Pingu ! <:MPengu_Emote2:965644261594902549>');
 	}else if (cmd == index.p + 'keilie') {
-		message.channel.send(`grrrr <a:haznowkiss:976972949787664404><a:keilikiss:976972930489647104>`);
+		message.channel.send(`https://www.larousse.fr/dictionnaires/francais`);
 	}else if (cmd == index.p + 'choupette') {
-		message.channel.send('Ma bébou ! <:ouioui:868792198492221491>');
-	}else if (cmd == index.p + 'rio') {
-		message.channel.send('Le terroriste explosif 💣');
+		message.channel.send('Bébou ! <:ouioui:868792198492221491>');
 	}else if (cmd == index.p + 'inès' || cmd == index.p + 'ines' ) {
 		message.channel.send('Fan de kpop, crush sur des coréens torses nus, gaga de chat, elle peut se réveler drole parfois mais elle prend vite le melon.');
 	}else if (cmd == index.p + 'obisu') {
@@ -89,23 +79,11 @@ exports.pote = message => {
 	}else if (cmd == index.p + 'psycho') {
 		message.channel.send('AMOGUS SIUUUUUUUU dame dane dame yo');
 	}else if (cmd == index.p + 'darkFury' || cmd == index.p + 'darkfury') {
-		message.channel.send('Le mari à Sun, elle fait les dou\'aa sur lui pour que Keilie y touche pas 🤲');
-	}else if (cmd == index.p + 'einnus') {
-		message.channel.send('La femme de DarkFury, pas touche sinon il sera pas content. Il est coincé avec elle et elle est autant dramatique que Haznoupette <:hihi:848873245758324796>');
-	}else if (cmd == index.p + 'haras') {
-		message.channel.send('Elle pleure la shinobi <:sad2:848875755537956864>');
-	}else if (cmd == index.p + 'xela') {
-		message.channel.send('Il traque la shinobi 🔪');
-	}else if (cmd == index.p + 'yrufkrad') {
-		message.channel.send('Le mari de Sun, pas touche sinon elle vous goume, vous ban, vous bloque, hack son compte, vous bloque.');
+		message.channel.send('Dans le milieu on l\'appelle Pablo Escobar, autrement dit, il est difficile de retrouver le coeur de Sun qu\'il a volé, arabe digne de sa dignité d\'arabe');
 	}else if (cmd == index.p + 'nevar') {
 		message.channel.send('Si elle te dit bonjour, baisse les yeux, si elle te demande quelque chose, fais le sans te poser de question, soumets toi à la reine du serveur.');
-	}else if (cmd == index.p + 'ikuzak') {
-		message.channel.send('Tu sais juste qu\'il est bg, sans plus d\'information.');
 	}else if (cmd == index.p + 'aurore') {
 		message.channel.send('Roro, la belle princesse aux cheveux longs et soyeux, attachés en chignon. \👸');
-	}else if (cmd == index.p + 'imak') {
-		message.channel.send('Une libanaise autant bonne que le Baba Ghanouj, mariée à Kazuki.');
 	}else if (cmd == index.p + 'valky') {
 		message.channel.send('Elle est à Zet\'s pas touche !');
 	}else if (cmd == index.p + 'xena') {
@@ -113,7 +91,7 @@ exports.pote = message => {
 	}else if(cmd == index.p +"wonzah"){
 		message.channel.send(`<:HAZNOWAKBAR:977326635894308957>`);
 	}else if(cmd == index.p +"pixi"){
-		if(message.channel.id == "947672084195205130")message.channel.send(`Quand elle était petite, elle voulait avoir un zizi <:bouffePasHalal:978674972547485777>`);
+		if(message.channel.id == "947672084195205130") return message.channel.send(`Quand elle était petite, elle voulait avoir un zizi <:bouffePasHalal:978674972547485777>`);
 		message.channel.send(`Quand elle était petite, elle voulait avoir un zizi..`);
 	}else if(cmd == index.p +"tez"){
 		message.channel.send(`Il va aussi vite que la vitesse divine !`);

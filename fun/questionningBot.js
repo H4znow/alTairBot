@@ -6,7 +6,7 @@ exports.questionning = message =>{
     if(!(message.content.startsWith(index.p+"q")||message.content.startsWith(index.p+"Q"))) return;
     const args = message.content.split(' ');
     args.shift();
-    const answer= ["Oui.", "Probablement.", "Non.", "C'est certain.", "Impossible.", "C'est certainement vrai.", "Je ne sais pas...", "Google existe.", "J'aurais tendance à dire non.", "La fameuse question a 1M.", "C'est un non.", "Vraiment pas.", "Je ne sais pas.", "Ouais.", "Mais oui bien sur !... Non.", "J'aime vraiment pas l'idée.", "C'est une très bonne chose !"]
+    const answer= ["Oui.", "Probablement.", "Non.", "C'est certain.", "Impossible.", "C'est certainement vrai.", "Je ne sais pas...", "Google existe.", "J'aurais tendance à dire non.", "La fameuse question a 1M.", "C'est un non.", "Vraiment pas.", "Je ne sais pas.", "Ouais.", "Mais oui bien sur !... Non.", "J'aime vraiment pas l'idée.", "C'est une très bonne chose !", "Demandez a Aya.", "J'ai une tête à tout savoir moi ?", "Tant que Matatouya ne dit pas I love u, je ne répondrai pas !"]
     const messAnswer = new MessageEmbed()
         .setColor('#fab534')
         .setAuthor(`${message.author.tag}`, `${message.author.displayAvatarURL()}`)
