@@ -4,11 +4,11 @@ const { MessageEmbed, Message } = require('discord.js');
 const console = require("console");
 
 exports.who = message => {
-    if(message.author.id != "517337001330999296")return;
     if(message.guild.id != "947634438257377320") return;        //message in SHR Gaming server
     var args = message.content.split(' ');
     const cmd = args.shift().toLowerCase();
-    if(cmd != index.p+"who") return;
+    console.log("wsh")
+    if(cmd != index.p+"qui") return;
     args = args.join(" ");
     
     //bloc pour tirer au sort un membre du server.;
