@@ -22,6 +22,7 @@ exports.help = message => {
         .addField(`Ping : `, `répond \`pong\` (utile pour vérifier si le bot est en ligne)`, true)
         .addField(`Un pseudonyme : `,`des commandes personnalisées pour les meilleurs membres (Ne pas demander)`, true)
         .addField(`Q : `,`Posez une question à Al-Tair. Il a réponse à tout !`, true)
+        .addField(`Qui : `,`Deamndez à Al-Tair a fait/est quelque chose !`, true)
         .addField(`\u200B`, `\u200B`, false)
         .addField(`__Commandes organisation:__`, `\u200B`, false)
         .addField(`Chuchoter (PoopyGang) || anonyme (SHR Gamin) : `, `envoies \`${index.p}chuchoter\`||\`${index.p}anonyme\` à Al-Tair en message privé pour plus d'info.`, true)

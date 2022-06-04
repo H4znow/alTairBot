@@ -43,14 +43,15 @@ exports.pote = message => {
 	}else if (cmd == index.p + 'raven') {
 		message.channel.send('7ayati ! <:ouioui:868792198492221491>');
 	}else if(message.toString().toLowerCase().match(/^je t\'? ?aime al\-? ?tair/) || message.toString().toLowerCase().match(/al\-? ?tair^je t\'? ?aime/) || message.toString().toLowerCase().match(/<@867034511196160060> ? ?je t\'? ?aime/) ||  message.toString().toLowerCase().match(/je t\'? ?aime ?<@867034511196160060> ? ?/)){
-        if(message.author.id != "517337001330999296"){
+        if(message.author.id == "405670347761778688") return message.reply("MATATOUYA ❤️");
+		if(message.author.id != "517337001330999296"){
 			var answer2 = " ";
 			const answer_Random_Person = [`Grrrrrr`,`Merci 😳`, `Bonjour deja ?`, `On est sur Discord, pas tinder poto.`,`oh..moi..moi aussi...`];
 			number = Math.floor(Math.random() * (answer_Random_Person.length) );
             answer2 = answer_Random_Person[number];
             message.reply(answer2);
             return;
-        }else if(message.author.id == "405670347761778688") return message.reply("MATATOUYA ❤️");
+        };
         message.reply("Moi aussi ❤️");
     }else if (cmd == index.p + 'kami'){
 		message.channel.send(`Kaminouniiii <:Frog_owi:899344705186316288>`);

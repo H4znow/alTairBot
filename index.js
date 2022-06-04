@@ -5,8 +5,25 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 // Create a new client instance
-const client = new Client({ intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_MEMBERS", "GUILD_MESSAGE_REACTIONS", 
-"DIRECT_MESSAGES", "DIRECT_MESSAGE_REACTIONS"], partials: ['MESSAGE', 'CHANNEL'], });
+const client = new Client({
+    restTimeOffset: 100,
+    intents: [
+        'GUILDS',
+        'GUILD_MESSAGES',
+        'GUILD_WEBHOOKS',
+        'GUILD_MESSAGE_REACTIONS',
+        'GUILD_VOICE_STATES',
+        'GUILD_VOICE_STATES',
+        'DIRECT_MESSAGE_REACTIONS',
+        'GUILD_MEMBERS',
+        Intents.FLAGS.DIRECT_MESSAGES,
+        Intents.FLAGS.GUILD_PRESENCES,
+        Intents.FLAGS.GUILD_BANS,
+        Intents.FLAGS.GUILD_EMOJIS_AND_STICKERS,
+        Intents.FLAGS.GUILD_INVITES,
+    ],
+    partials: ['MESSAGE', 'CHANNEL', 'REACTION', "GUILD_MEMBER", "USER", "GUILD", "GUILD_EMOJI", "GUILD_ROLE", "GUILD_MEMBER", "GUILD_BAN",]
+});
 const poopyGangId = "841455115445600317"
 exports.poopyGangId = poopyGangId;
 exports.c = client;
@@ -22,10 +39,10 @@ client.once('ready', () => {
         setInterval(()=>{
                 if(!affichage){
                         //nombreMembre = client.guilds.cache.get("841455115445600317").memberCount;
-                        client.user.setActivity(`les étoiles que père a volé`, { type: 'WATCHING' });
+                        client.user.setActivity(`Twitch/Hazzuna`, { type: 'WATCHING' });
                         affichage = 1;
                 } else {
-                        client.user.setActivity('hamoud habibi', { type: 'PLAYING' });
+                        client.user.setActivity('Apex Legends', { type: 'PLAYING' });
                         affichage = 0;
                 }
         },600000)
@@ -44,6 +61,7 @@ client.on("messageCreate", require("./orga/chuchotement").chuchotement);
 client.on("messageCreate", require("./fun/discuDm").dmDiscu);
 client.on("messageCreate", require("./orga/help").help);
 client.on("messageCreate", require("./fun/questionningBot").questionning);
+client.on("messageCreate", require("./fun/who").who);
 //client.on("messageCreate", require("./orga/poopyMemeBattle").battle);
 //test
 //client.on("messageCreate", require("./test").test);
