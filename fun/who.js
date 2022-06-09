@@ -4,20 +4,22 @@ const { MessageEmbed, Message } = require('discord.js');
 const console = require("console");
 
 exports.who = message => {
-    if(message.guild.id != "947634438257377320") return;        //message in SHR Gaming server
+    //if(message.guild.id != "947634438257377320") return;        //message in SHR Gaming server
     var args = message.content.split(' ');
     const cmd = args.shift().toLowerCase();
-    console.log("wsh")
     if(cmd != index.p+"qui") return;
     args = args.join(" ");
-    
+    let argsMin = args.toLowerCase();
     //bloc pour tirer au sort un membre du server.;
     // Fetch by an array of users including their presences
     let randomUser = {}
     const guild = client.guilds.cache.get("947634438257377320");
     const users = guild.members.cache.filter(member => !(member.user.bot))
     randomUser = users.random()
-
+    randomUser = randomUser.user;
+    //
+    if(argsMin.match(/ m[eè]re d[e'] ?al-? ?tair/) || argsMin.match(/ maman d[e'] ?al-? ?tair/) || argsMin.match(/ maman d[e'] ?titir/) || argsMin.match(/ m[eè]re de[e'] ?titir/) ) randomUser = "<@984086434464022589>";
+    if(argsMin.match(/ p[eè]re de[e'] ?al-? ?tair/) || argsMin.match(/ papa de[^e'] ?al-? ?tair/) || argsMin.match(/ papa de[e'] ?titir/) || argsMin.match(/ p[eè]re de[e'] ?titir/) ) randomUser = "Bientot...";
     //Answers
     const answerList =["C'est ", "Certainement ", "", "Je dirai ", "Je mettrai une pièce sur ", "100% c'est ", "Ce n'est pas "];
     number = Math.floor(Math.random() * (answerList.length) );
@@ -29,7 +31,7 @@ exports.who = message => {
         .setAuthor(`${message.author.tag}`, `${message.author.displayAvatarURL()}`)
         .setThumbnail()
         .addField(`**Question** :`, `Qui ${args}`)
-        .addField(`**Réponse** : `, `${answer} ${randomUser.user}`)
+        .addField(`**Réponse** : `, `${answer} ${randomUser}`)
         .setFooter(`Vous êtes beaux`, 'https://i.postimg.cc/nhZbcy3d/aigle.png')
         .setTimestamp();
     message.channel.send({ embeds: [messAnswer] });
