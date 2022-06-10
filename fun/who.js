@@ -19,7 +19,7 @@ exports.who = message => {
     randomUser = randomUser.user;
     //
     if(argsMin.match(/ m[eè]re d[e'] ?al-? ?tair/) || argsMin.match(/ maman d[e'] ?al-? ?tair/) || argsMin.match(/ maman d[e'] ?titir/) || argsMin.match(/ m[eè]re de[e'] ?titir/) ) randomUser = "<@984086434464022589>";
-    if(argsMin.match(/ p[eè]re de[e'] ?al-? ?tair/) || argsMin.match(/ papa de[^e'] ?al-? ?tair/) || argsMin.match(/ papa de[e'] ?titir/) || argsMin.match(/ p[eè]re de[e'] ?titir/) ) randomUser = "Bientot...";
+    if(argsMin.match(/ p[eè]re de[e'] ?al-? ?tair/) || argsMin.match(/ papa de[^e'] ?al-? ?tair/) || argsMin.match(/ papa de[e'] ?titir/) || argsMin.match(/ p[eè]re de[e'] ?titir/) ) randomUser = "Taleb";
     //Answers
     const answerList =["C'est ", "Certainement ", "", "Je dirai ", "Je mettrai une pièce sur ", "100% c'est ", "Ce n'est pas "];
     number = Math.floor(Math.random() * (answerList.length) );
