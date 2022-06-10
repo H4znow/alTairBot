@@ -101,12 +101,6 @@ exports.pote = message => {
 	}else if (cmd == index.p + 'chocolat') {
 		message.channel.send(`<:GIVEMECHOCOLATEBITCH:978677427750453258>`);
 	}else if (cmd == index.p + 'famille') {
-		message.channel.send(`<@984086434464022589> est ma mère.\n
-		<@447083752175435786> est mon père.\n
-		<@517337001330999296> est mon oncle.\n
-		<@756887056218849320> est ma soeur.\n
-		<@280008455774011395> est mon frère.\n
-		<@341305833268838402> est ma tante.\n
-		<@724655632493445130> est ma crush.`);
+		message.channel.send(`<@984086434464022589> est ma mère.\n<@447083752175435786> est mon père.\n<@517337001330999296> est mon oncle.\n<@756887056218849320> est ma soeur.\n<@280008455774011395> est mon frère.<@341305833268838402> est ma tante.<@724655632493445130> est ma crush.`);
 	}
 };
