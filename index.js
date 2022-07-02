@@ -62,6 +62,7 @@ client.on("messageCreate", require("./fun/discuDm").dmDiscu);
 client.on("messageCreate", require("./orga/help").help);
 client.on("messageCreate", require("./fun/questionningBot").questionning);
 client.on("messageCreate", require("./fun/who").who);
+client.on("messageCreate", require("./fun/changeName").changeName);
 //client.on("messageCreate", require("./orga/poopyMemeBattle").battle);
 //test
 //client.on("messageCreate", require("./test").test);
