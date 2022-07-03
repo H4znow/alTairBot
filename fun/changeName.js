@@ -12,6 +12,6 @@ exports.changeName = message => {
     }else if(message.author.id =="371059621688770561"){
         message.reply(`Bah non, tu es ma pu.. mon meilleur pote !`)
     }else{
-        message.member.setNickname(args).then(()=>{message.reply(`Tu es <@${message.author.id}>.`)}).catch(err=>{console.log(err)});
+        message.member.setNickname(args).then(()=>{message.reply(`Enchanté <@${message.author.id}>.`)}).catch(err=>{console.log(err)});
     }
 }
