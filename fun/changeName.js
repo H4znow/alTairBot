@@ -6,7 +6,7 @@ exports.changeName = message => {
     args.shift();
 	args= args.join(' ');
     if(args.length > 32) return console.log("error");
-    if (!message.content.toLowerCase().match(/je suis */)) return;
+    if (!message.content.toLowerCase().startsWith("je suis")) return;
     if(message.author.id =="756887056218849320"){
         message.reply(`Mais non, tu es sousou.`)
     }else if(message.author.id =="371059621688770561"){
