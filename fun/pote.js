@@ -73,8 +73,6 @@ exports.pote = message => {
 		message.channel.send('T\'es une vraie bitch, toi.👠');
 	}else if (cmd == index.p + 'angesun') {
 		message.channel.send('<:angesun:970831577124851722>');
-	}else if (cmd == index.p + 'badboy') {
-		message.channel.send('Haznoupette, la plus belle meuf, mais aussi la plus dramatique du serveur 🤭');
 	}else if (cmd == index.p + 'arabe') {
 		message.channel.send('BOUM !! 💣');
 	}else if (cmd == index.p + 'psycho') {
@@ -101,6 +99,6 @@ exports.pote = message => {
 	}else if (cmd == index.p + 'chocolat') {
 		message.channel.send(`<:GIVEMECHOCOLATEBITCH:978677427750453258>`);
 	}else if (cmd == index.p + 'famille') {
-		message.channel.send(`<@984086434464022589> est ma mère.\n<@447083752175435786> est mon père.\n<@517337001330999296> est mon oncle.\n<@756887056218849320> est ma soeur.\n<@280008455774011395> est mon frère.\n<@341305833268838402> est ma tante.\n<@724655632493445130> est ma crush.\n<@371059621688770561> est mon meileur pote.`);
+		message.channel.send(`Sun est ma mère.\nDarkFury est mon père.\nHaznow est mon oncle.\nSarah est ma soeur.\nZetsi est mon frère.\nRaven est ma tante.\nMee6 est ma crush.\nAlex est mon meileur pote.`);
 	}
 };
