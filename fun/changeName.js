@@ -1,12 +1,12 @@
 const index = require('../index.js');
 
 exports.changeName = message => {
-    if(message.guil.id == "1005849149360590909") return;
+    if(message.guildid != "1005849149360590909") return;
     let args = message.content.split(' ');
 	args.shift();
     args.shift();
 	args= args.join(' ');
-    if(args.length > 32) return console.log("error");
+    if(args.length > 32) return console.log("error (ChangeName.js)");
     if (!message.content.toLowerCase().startsWith("je suis")) return;
     if(message.author.id =="756887056218849320"){
         message.reply(`Mais non, tu es sousou.`)
