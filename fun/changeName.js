@@ -1,6 +1,7 @@
 const index = require('../index.js');
 
 exports.changeName = message => {
+    if(message.guil.id == "1005849149360590909") return;
     let args = message.content.split(' ');
 	args.shift();
     args.shift();

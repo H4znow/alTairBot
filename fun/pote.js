@@ -23,7 +23,7 @@ exports.pote = message => {
 		message.channel.send('Les plus beaux pieds d\'orc.');
 	}
 	else if (cmd == index.p + 'choco') {
-		message.channel.send('Je suis sous le choc <:wtf:868461188575543296> ');
+		message.channel.send('Je suis sous le choc ');
 	}else if (cmd == index.p + 'say') {
 		if ((message.member.roles.cache.has('841457555199754280')||(message.author.id == "517337001330999296"))) {
 			const say = args.join(' ');
@@ -58,11 +58,11 @@ exports.pote = message => {
 	}else if (cmd == index.p + 'sheytasun'){
 		message.channel.send(`<:sheytasun:961799016155344898>`);
 	}else if (cmd == index.p + 'zetsuma') {
-		message.channel.send('Notre zezet nationale ! <a:spffft:899344727281909801>');
+		message.channel.send('Notre zezet nationale ! <:ouioui:868792198492221491>');
 	}else if (cmd == index.p + 'kazuki') {
 		message.channel.send('C\'est un bg qui se fait charo par tout le monde (logique). Mais faites attention...Une âme charitable et sauvage défend son territoire.');
 	}else if (cmd == index.p + 'revox') {
-		message.channel.send('Tema la taille du rat <a:rat1:964843955684540496>');
+		message.channel.send('Tema la taille du rat 🐀');
 	}else if (cmd == index.p + 'keilie') {
 		message.channel.send(`https://www.larousse.fr/dictionnaires/francais`);
 	}else if (cmd == index.p + 'choupette') {
@@ -70,7 +70,7 @@ exports.pote = message => {
 	}else if (cmd == index.p + 'inès' || cmd == index.p + 'ines' ) {
 		message.channel.send('Fan de kpop, crush sur des coréens torses nus, gaga de chat, elle peut se réveler drole parfois mais elle prend vite le melon.');
 	}else if (cmd == index.p + 'obisu') {
-		message.channel.send('T\'es une vraie bitch, toi.👠');
+		message.channel.send('T\'es une vraie bitch, toi. 👠');
 	}else if (cmd == index.p + 'angesun') {
 		message.channel.send('<:angesun:970831577124851722>');
 	}else if (cmd == index.p + 'arabe') {
@@ -90,7 +90,6 @@ exports.pote = message => {
 	}else if(cmd == index.p +"wonzah"){
 		message.channel.send(`<:HAZNOWAKBAR:977326635894308957>`);
 	}else if(cmd == index.p +"pixi"){
-		if(message.channel.id == "947672084195205130") return message.channel.send(`Quand elle était petite, elle voulait avoir un zizi <:bouffePasHalal:978674972547485777>`);
 		message.channel.send(`Quand elle était petite, elle voulait avoir un zizi..`);
 	}else if(cmd == index.p +"tez"){
 		message.channel.send(`Il va aussi vite que la vitesse divine !`);
@@ -99,6 +98,6 @@ exports.pote = message => {
 	}else if (cmd == index.p + 'chocolat') {
 		message.channel.send(`<:GIVEMECHOCOLATEBITCH:978677427750453258>`);
 	}else if (cmd == index.p + 'famille') {
-		message.channel.send(`Sun est ma mère.\nDarkFury est mon père.\nHaznow est mon oncle.\nSarah est ma soeur.\nZetsi est mon frère.\nRaven est ma tante.\nMee6 est ma crush.\nAlex est mon meileur pote.`);
+		message.channel.send(`Sun est ma mère.\nDarkFury est mon père. \nSarah est ma soeur.\nZetsi est mon frère.\nRaven est ma tante.\nMee6 est ma crush.\nAlex est mon meileur pote.`);
 	}
 };
