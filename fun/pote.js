@@ -99,5 +99,7 @@ exports.pote = message => {
 		message.channel.send(`<:GIVEMECHOCOLATEBITCH:978677427750453258>`);
 	}else if (cmd == index.p + 'famille') {
 		message.channel.send(`Sun est ma mère.\nDarkFury est mon père. \nSarah est ma soeur.\nZetsi est mon frère.\nRaven est ma tante.\nMee6 est ma crush.\nAlex est mon meileur pote.`);
+	}else if(cmd == index.p + 'gayu'){
+		message.channel.send(`Faites gaffe, elle roule comme une flèche. C'est pour ca qu'on flash sur elle...`)
 	}
 };
