@@ -39,7 +39,7 @@ exports.dmDiscu = message => {
         message.channel.send(answer)
         return;
         //sun
-    }else if(message.author.id == "405670347761778688"){
+    }/*else if(message.author.id == "405670347761778688"){
         if(chosenValue == 0){
             number = Math.floor(Math.random() * (answer_Sun.length) );
             answer = answer_Sun[number];
@@ -50,7 +50,7 @@ exports.dmDiscu = message => {
         message.channel.send(answer)
         return;
         //Raven
-    }else if(message.author.id == "341305833268838402"){
+    }*/else if(message.author.id == "341305833268838402"){
         if(chosenValue == 0){
             number = Math.floor(Math.random() * (answer_Raven.length) );
             answer = answer_Raven[number];
@@ -61,7 +61,7 @@ exports.dmDiscu = message => {
         message.channel.send(answer)
         return;
     //Keilie
-    }else if(message.author.id == "629407078175473664"){
+    }/*else if(message.author.id == "629407078175473664"){
         if(chosenValue == 0){
             number = Math.floor(Math.random() * (answer_Keilie.length) );
             answer = answer_Keilie[number];
@@ -72,7 +72,7 @@ exports.dmDiscu = message => {
         message.channel.send(answer)
         return;
         //Raven
-    }else{
+    }*/else{
         number = Math.floor(Math.random() * (answer_Random_Person.length) );
         message.channel.send(answer_Random_Person[number]);
         return;
