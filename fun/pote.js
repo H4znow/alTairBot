@@ -60,7 +60,7 @@ exports.pote = message => {
 	}else if (cmd == index.p + 'zetsuma') {
 		message.channel.send('Notre zezet nationale ! <:ouioui:868792198492221491>');
 	}else if (cmd == index.p + 'kazuki') {
-		message.channel.send('C\'est un bg qui se fait charo par tout le monde (logique). Mais faites attention...Une âme charitable et sauvage défend son territoire.');
+		message.channel.send('C\'est un bg qui se fait charo par tout le monde (logique). Faites attention...Sa voix fait jouire toute les filles.');
 	}else if (cmd == index.p + 'revox') {
 		message.channel.send('Tema la taille du rat 🐀');
 	}else if (cmd == index.p + 'keilie') {
