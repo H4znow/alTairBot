@@ -24,7 +24,7 @@ const client = new Client({
     ],
     partials: ['MESSAGE', 'CHANNEL', 'REACTION', "GUILD_MEMBER", "USER", "GUILD", "GUILD_EMOJI", "GUILD_ROLE", "GUILD_MEMBER", "GUILD_BAN",]
 });
-const poopyGangId = "841455115445600317"
+const poopyGangId = "841455115445600317";
 exports.poopyGangId = poopyGangId;
 exports.c = client;
 exports.p = "..";

@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -18,13 +18,15 @@
   },
   "homepage": "https://github.com/H4znow/alTairBot#readme",
   "dependencies": {
-    "discord.js": "^13.3.1",
+    "discord.js": "^13.16.0",
     "dotenv": "^10.0.0",
     "mysql": "^2.18.1",
     "node": "^16.13.0",
-    "nodemon": "^2.0.15",
     "to": "^0.2.9",
-    "update": "^0.7.4"
+    "update": "^0.4.2"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
