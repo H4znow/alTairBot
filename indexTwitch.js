@@ -10,7 +10,7 @@ const opts = {
         password: process.env.TTV_TOKEN
     },
     channels: [
-        'haznow'
+        'haznow', 'Hazzuna_'
     ]
 };
 exports.p_ttv = "..";
