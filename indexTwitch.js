@@ -14,14 +14,16 @@ const opts = {
     ]
 };
 exports.p_ttv = "..";
-
+exports.starts = "🤖 -- ";
 
 // Create a client with our options
 const client = new tmi.client(opts);
 exports.c_ttv = client;
 
 // Register our event handlers (defined below)
+client.on('message', require("./funTv/pong").pong);
 client.on('message', require("./funTv/modsJokes").modsJokes);
+client.on('message', require("./funTv/roueDuBan").roueDuBan);
 
 
 client.on('connected', (addr, port) =>{

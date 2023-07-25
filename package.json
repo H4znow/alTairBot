@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "start_Discord": "node index.js",
-    "start_Twitch" : "node indexTwitch.js",
+    "start_Twitch": "node indexTwitch.js",
+    "test_Discord": "nodemon index.js",
+    "test_Twitch": "nodemon indexTwitch.js",
     "dev": "concurrently --kill-others \"npm run start_Discord\" \"npm run start_Twitch\""
   },
   "repository": {
@@ -24,6 +26,7 @@
     "dotenv": "^10.0.0",
     "mysql": "^2.18.1",
     "node": "^16.13.0",
+    "nodemon": "^3.0.1",
     "tmi.js": "^1.8.5",
     "to": "^0.2.9",
     "update": "^0.4.2"
