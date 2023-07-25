@@ -6,11 +6,11 @@ dotenv.config();
 // Define configuration options
 const opts = {
     identity: {
-        username: 'Al-Tair',
+        username: 'haznow',
         password: process.env.TTV_TOKEN
     },
     channels: [
-        'haznow', 'hazzuna_'
+        'haznow'
     ]
 };
 exports.p_ttv = "..";
@@ -23,7 +23,12 @@ exports.c_ttv = client;
 // Register our event handlers (defined below)
 client.on('message', require("./funTv/pong").pong);
 client.on('message', require("./funTv/modsJokes").modsJokes);
-client.on('message', require("./funTv/roueDuBan").roueDuBan);
+
+
+
+
+
+//client.on('message', require("./funTv/roueDuBan").roueDuBan);
 
 
 client.on('connected', (addr, port) =>{
