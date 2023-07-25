@@ -10,7 +10,7 @@ const opts = {
         password: process.env.TTV_TOKEN
     },
     channels: [
-        'haznow'
+        'haznow', 'Hazzuna_'
     ]
 };
 exports.p_ttv = "..";
@@ -23,12 +23,8 @@ exports.c_ttv = client;
 // Register our event handlers (defined below)
 client.on('message', require("./funTv/pong").pong);
 client.on('message', require("./funTv/modsJokes").modsJokes);
-
-
-
-
-
-//client.on('message', require("./funTv/roueDuBan").roueDuBan);
+client.on('message', require("./funTv/roueDuBan").roueDuBan);
+client.on('message', require("./funTv/chipChacha").lovaCalc);
 
 
 client.on('connected', (addr, port) =>{

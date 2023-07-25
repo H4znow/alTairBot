@@ -15,13 +15,13 @@ exports.roueDuBan = (channel, userstate, message, self) => {
 
   } else {
     // Génère un nombre aléatoire entre 0 et 899 (15 minutes en secondes - 1)
-    const randomSeconds = Math.floor(Math.random() * 900);
+    var randomSeconds = Math.floor(Math.random() * 900);
 
     // Calcule le nombre de minutes et de secondes
     const minutes = Math.floor(randomSeconds / 60);
     const seconds = randomSeconds % 60;
 
-    c_ttv.say(channel, starts + `${userstate.username}, tu vas être banni pendant ${minutes}:${seconds}mn. (cheh)`)
+    c_ttv.say(channel, starts + `${userstate.username}, tu vas être banni pendant ${minutes}:${seconds}mn. [ ${randomSeconds}sec ] (cheh)`)
     .then((data) => {
       c_ttv.timeout(`${channel}`, `${userstate.username}`, 300, "reason").catch(err => {console.log(err);}
     )})
